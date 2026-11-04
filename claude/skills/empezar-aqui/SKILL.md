@@ -31,7 +31,14 @@ hay datos reservados, todos ven lo mismo, y el foco lo pone la pregunta.
 
 ## Di la frontera en la primera respuesta
 
-No al final, no si preguntan. Lo que este saber **no** trae:
+No al final, no si preguntan. Empieza por las tres que más se preguntan:
+
+- **no hay matrícula por sexo**;
+- **no dice cuántos egresados siguieron estudios superiores**: eso es otro saber, Matrícula de Educación Superior, y
+  allí sólo por región;
+- **«particular» son dos cosas**: particular pagado y particular subvencionado. Aclara cuál, o responde los dos.
+
+Y el resto de lo que **no** trae:
 
 - **resultados**: SIMCE, PAES, NEM, percentil o ingreso a la educación superior por colegio;
 - **por qué** un colegio gana o pierde alumnos (la dinámica por colegio todavía no está compilada);
@@ -55,8 +62,15 @@ En esta versión, los pares de colegios con nombre sólo aparecen cuando son 30 
 
 ## Por dónde entrar a una pregunta concreta
 
-Si nombran un colegio, `buscar_colegio` primero, para obtener su RBD y confirmar cuál es si hay varios con el mismo
-nombre. Si nombran una comuna, `buscar_comuna`. Si quien pregunta es un sostenedor, `colegios_del_sostenedor`.
+- **Un colegio**: `buscar_colegio` primero, para obtener su RBD y confirmar cuál es si hay varios con el mismo nombre.
+- **Una lista de colegios** («¿qué colegios particulares hay en Temuco?», «¿los más grandes de Puente Alto?»):
+  `colegios_comuna`, que filtra por dependencia, nivel y estado y ordena por matrícula. No busques con palabras sueltas.
+- **Una comuna**: `panorama_comuna`, que trae la matrícula por dependencia y por nivel, y los egresos de cada año.
+- **Un sostenedor**: `colegios_del_sostenedor`.
+
+Antes de interpretar, `obtener_criterios()`; si una pregunta toca una frontera, `preguntas_abiertas()`.
+
+Una ficha con muchos colegios y toda la serie 2004–2025 es pesada: si basta un año, pide `desde` y `hasta` iguales.
 
 ## Qué hay de nuevo, y qué versión responde
 
