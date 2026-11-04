@@ -41,6 +41,7 @@ No al final, no si preguntan. Empieza por las tres que más se preguntan:
 
 Y una cuarta, si preguntan por párvulos: **la parvularia es parcial**. Los jardines de JUNJI y de Integra no están en
 la Matrícula Escolar del Mineduc, así que el saber no sirve para la matrícula total de parvularia de un territorio.
+Las escuelas de lenguaje sí están, dentro de la educación especial, que el saber entrega aparte de la regular.
 
 Y el resto de lo que **no** trae:
 
@@ -49,7 +50,9 @@ Y el resto de lo que **no** trae:
 - matrícula por **género**, asistencia, postulación SAE, valor agregado;
 - el **nombre del sostenedor**: sólo su RUT;
 - **proyecciones**: describe lo registrado, no anticipa;
-- cifras de **menos de 5 alumnos**: van agrupadas o suprimidas para proteger a los niños, y eso no significa cero.
+- cifras de **menos de 5 alumnos** en la educación especial y en lo que les pasa a los alumnos (llegadas, salidas,
+  egresos, traslados): van agrupadas o suprimidas para proteger a los niños, y eso no significa cero. La matrícula
+  regular, en cambio, va exacta: es la misma que el Mineduc publica en sus datos abiertos.
 
 La lista completa y exacta viene en `no_derivable` de `listar_cobertura()`: úsala en vez de recitar ésta.
 
@@ -62,14 +65,16 @@ Dos ideas que quien pregunta tiene que oír antes de la primera cifra con nombre
   y la respuesta los dice.
 - **Se describe, no se califica.** Ningún colegio es «el preferido» ni «pierde frente a» otro.
 
-En esta versión, los pares de colegios con nombre sólo aparecen cuando son 30 o más alumnos en cinco años.
+Los pares de colegios con nombre aparecen desde 5 alumnos por ventana; los de menos de 30 se citan con su cifra y no
+se leen como tendencia.
 
 ## Por dónde entrar a una pregunta concreta
 
 - **Un colegio**: `buscar_colegio` primero, para obtener su RBD y confirmar cuál es si hay varios con el mismo nombre.
 - **Una lista de colegios** («¿qué colegios particulares hay en Temuco?», «¿los más grandes de Puente Alto?»):
   `colegios_comuna`, que filtra por dependencia, nivel y estado y ordena por matrícula. No busques con palabras sueltas.
-- **Una comuna**: `panorama_comuna`, que trae la matrícula por dependencia y por nivel, y los egresos de cada año.
+- **Una comuna**: `panorama_comuna`, que trae la matrícula por dependencia y por nivel, la educación especial aparte y
+  los egresos de cada año.
 - **Un sostenedor**: `colegios_del_sostenedor`.
 
 Antes de interpretar, `obtener_criterios()`; si una pregunta toca una frontera, `preguntas_abiertas()`.

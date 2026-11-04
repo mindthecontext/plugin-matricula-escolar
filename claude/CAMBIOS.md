@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.3.0 · 2026-11-04
+
+Pasa a evidencia@2, con la nueva regla de divulgación aprobada por Ernesto. La matrícula regular va exacta, por colegio, grado, dependencia y comuna: son los mismos conteos que el Mineduc publica en sus datos abiertos, y ya no hay «menos de 5», tramos ni «otros» en la matrícula. Quedan protegidos con k = 5 los desenlaces de los alumnos (llegadas, salidas, egresos, traslados) y la educación especial, que ahora está y va aparte: incluye las escuelas de lenguaje. La comuna se suma con la dependencia que cada colegio tenía ese año, y los cambios de dependencia se muestran. Los pares de colegios con nombre aparecen desde 5 alumnos (antes 30), con una ventana nueva, 2005–2010. Los traslados por el cierre o la absorción de un colegio van aparte y ya no inflan la captación. El aviso de saltos usa un umbral medido en todo el país (más de 50 %, con 100 alumnos o más).
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `preguntas_abiertas`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2` · antes `evidencia@1+directorio@1`
+
 ## v0.2.2 · 2026-11-04
 
 Corrige una fuga de privacidad: en algunos años, la matrícula de una dependencia en una comuna permitía deducir, restando los colegios publicados, la cifra de un colegio con menos de 5 alumnos. Esas celdas van ahora como la suma de los colegios publicados (un mínimo, marcado incompleto) y dicen cuántos colegios quedaron fuera; cuando esa suma engañaría, van suprimidas. Afecta al 12% de las celdas de la serie por dependencia. El saber distingue además el nivel de la modalidad (las escuelas de lenguaje son educación especial que atiende párvulos) y su criterio de parvularia trae las cifras y los códigos de grado.
