@@ -38,6 +38,9 @@ No al final, no si preguntan. Empieza por las tres que más se preguntan:
   allí sólo por región;
 - **«particular» son dos cosas**: particular pagado y particular subvencionado. Aclara cuál, o responde los dos.
 
+Y una cuarta, si preguntan por párvulos: **la parvularia es parcial**. Los jardines de JUNJI y de Integra no están en
+la Matrícula Escolar del Mineduc, así que el saber no sirve para la matrícula total de parvularia de un territorio.
+
 Y el resto de lo que **no** trae:
 
 - **resultados**: SIMCE, PAES, NEM, percentil o ingreso a la educación superior por colegio;

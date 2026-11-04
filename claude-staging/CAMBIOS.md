@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.2.1 · 2026-11-04
+
+Al listar colegios, escuelas o liceos de una comuna ya no aparecen los jardines infantiles que sólo tienen parvularia: se informan aparte y se pueden incluir si se piden. El saber dice ahora que su parvularia es parcial, porque los jardines de JUNJI y de Integra no están en la Matrícula Escolar del Mineduc. Las series avisan donde pueden engañar: el archivo incompleto de 2008, los colegios cuya matrícula salta sin cierre ni absorción (un registro incompleto puede parecer una caída) y qué dependencias quedaron dentro de «otros» cada año. Los egresos dicen cuántos colegios faltan en la suma, el listado de una comuna trae un resumen por tamaño y nivel, y los nombres de 77 comunas con tilde, que venían dañados, ya se leen y se buscan bien.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `preguntas_abiertas`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@1+directorio@1`
+
 ## v0.2.0 · 2026-11-04
 
 Ahora se puede recorrer una comuna completa. Una herramienta nueva lista los colegios de una comuna, los filtra por dependencia, nivel o estado y los ordena por matrícula. El panorama de la comuna trae la matrícula por nivel (parvularia, básica, media) y los egresos de 4° medio de cada año. Los corredores dicen qué parte de los traslados explican, y los flujos de un colegio nombran el colegio de destino cuando hubo un cierre o una absorción. Además, el saber expone sus criterios de lectura y las preguntas que todavía no puede responder.
