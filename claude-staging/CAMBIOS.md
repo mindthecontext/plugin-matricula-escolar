@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.2.2 · 2026-11-04
+
+Corrige una fuga de privacidad: en algunos años, la matrícula de una dependencia en una comuna permitía deducir, restando los colegios publicados, la cifra de un colegio con menos de 5 alumnos. Esas celdas van ahora como la suma de los colegios publicados (un mínimo, marcado incompleto) y dicen cuántos colegios quedaron fuera; cuando esa suma engañaría, van suprimidas. Afecta al 12% de las celdas de la serie por dependencia. El saber distingue además el nivel de la modalidad (las escuelas de lenguaje son educación especial que atiende párvulos) y su criterio de parvularia trae las cifras y los códigos de grado.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `preguntas_abiertas`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@1+directorio@1`
+
 ## v0.2.1 · 2026-11-04
 
 Al listar colegios, escuelas o liceos de una comuna ya no aparecen los jardines infantiles que sólo tienen parvularia: se informan aparte y se pueden incluir si se piden. El saber dice ahora que su parvularia es parcial, porque los jardines de JUNJI y de Integra no están en la Matrícula Escolar del Mineduc. Las series avisan donde pueden engañar: el archivo incompleto de 2008, los colegios cuya matrícula salta sin cierre ni absorción (un registro incompleto puede parecer una caída) y qué dependencias quedaron dentro de «otros» cada año. Los egresos dicen cuántos colegios faltan en la suma, el listado de una comuna trae un resumen por tamaño y nivel, y los nombres de 77 comunas con tilde, que venían dañados, ya se leen y se buscan bien.
