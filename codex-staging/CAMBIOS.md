@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.5.0 · 2026-11-05
+
+Totales exactos y alumnos prioritarios. Los totales de comuna, región y país ahora incluyen a todos los alumnos, también los de colegios con menos de 5 en la educación especial: el total con especial de Chile en 2025 es 3.439.347, ya no «al menos». En la ficha de cada colegio la protección sigue igual. Los tres panoramas traen los alumnos prioritarios desde 2016 por dependencia y nivel, en número y porcentaje, con el aviso de que el salto de 2022 a 2024 puede ser un cambio de criterio. El aviso de la región actual aparece sólo donde importa (Biobío y Ñuble, Los Lagos y Los Ríos, Tarapacá y Arica y Parinacota) y dice cómo comparar con la región de la época. Se acepta «estatal» como público, y la cobertura declara que la media no distingue científico-humanista de técnico-profesional y que los resultados por colegio están decididos pero sin compilar.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1` · antes `evidencia@2+directorio@2+territorios@1`
+
 ## v0.4.0 · 2026-11-05
 
 Región y país. Dos herramientas nuevas responden sobre Chile entero y sobre cada región: cómo ha evolucionado la matrícula, por dependencia, por nivel, por nivel y dependencia a la vez, y por grado (por ejemplo, cuántos alumnos hay en 1° medio), con la educación especial aparte. Son la suma de todos los colegios, hecha y verificada por el laboratorio, y la región es la actual de cada comuna para toda la serie: Ñuble, Los Ríos y Arica y Parinacota tienen cifras también antes de existir, y se dice. La comuna también trae ahora su matrícula por grado y el cruce de nivel con dependencia. Los resultados por colegio quedan declarados como decididos y todavía sin compilar.
