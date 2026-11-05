@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.7.0 · 2026-11-05
+
+Ingreso a la educación superior. Los resultados de un colegio, una comuna, una región o Chile traen ahora cuántos egresados de cada promoción se matricularon en la educación superior el año siguiente y en los tres años siguientes, y si fue en una universidad o en un instituto o centro técnico: en Chile, el ingreso inmediato pasó de 41 % en la promoción 2006 a 57 % en la de 2025. En los colegios chicos la proporción se protege como los alumnos prioritarios. A qué carrera o institución entran queda para una etapa siguiente. Además, el contexto de un colegio dice qué proporción de la comuna y del país rindió la PAES e ingresó a la educación superior.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@3` · antes `evidencia@2+directorio@2+agregados@1+resultados@2`
+
 ## v0.6.1 · 2026-11-05
 
 Corrección de los resultados por territorio. Algunos egresados quedaban en un grupo de dependencia «sin dato» cuando su colegio no tenía registro ese año, y en ciertas comunas ese grupo mostraba el promedio de una a cuatro personas. Ahora cada colegio toma la dependencia del año más cercano en que la tiene, y ese grupo desaparece. Las cifras de cada colegio y los totales no cambian.
