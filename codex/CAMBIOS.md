@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.6.0 · 2026-11-05
+
+Resultados por colegio. Dos herramientas nuevas dan el NEM (promedio de notas de enseñanza media, desde 2005) y la PAES de cada promoción (Competencia Lectora, Matemática 1 y su promedio, desde 2022, con cuántos rindieron), de un colegio, una comuna, una región o Chile. La definición es la del informe por colegio del DEMRE y lo reproduce exacto. Cada resultado viene con su contexto y con la advertencia de que describe a los alumnos que rindieron y no la calidad del colegio: ninguna herramienta ordena colegios por resultado. Además, lo que pidió la quinta ronda de pruebas: la búsqueda encuentra con plurales («diaconales»), «estatal» dice que se leyó como público sin la administración delegada, la ficha explica qué es un alumno prioritario, la matriz trae la suma de saldos rotulada como mínimo y la comuna avisa cuando su especial es la de un solo colegio.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `resultados_colegio`, `resultados_territorio`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@1` · antes `evidencia@2+directorio@2+agregados@1`
+
 ## v0.5.0 · 2026-11-05
 
 Totales exactos y alumnos prioritarios. Los totales de comuna, región y país ahora incluyen a todos los alumnos, también los de colegios con menos de 5 en la educación especial: el total con especial de Chile en 2025 es 3.439.347, ya no «al menos». En la ficha de cada colegio la protección sigue igual. Los tres panoramas traen los alumnos prioritarios desde 2016 por dependencia y nivel, en número y porcentaje, con el aviso de que el salto de 2022 a 2024 puede ser un cambio de criterio. El aviso de la región actual aparece sólo donde importa (Biobío y Ñuble, Los Lagos y Los Ríos, Tarapacá y Arica y Parinacota) y dice cómo comparar con la región de la época. Se acepta «estatal» como público, y la cobertura declara que la media no distingue científico-humanista de técnico-profesional y que los resultados por colegio están decididos pero sin compilar.
