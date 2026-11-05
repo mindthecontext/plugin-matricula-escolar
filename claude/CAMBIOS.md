@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.3.1 · 2026-11-04
+
+Lo que pidió la tercera ronda de pruebas. La matriz de una comuna ahora responde primero «¿hacia qué comunas salen y desde cuáles llegan?», con el nombre de cada comuna y lo que queda sin atribuir, y trae sólo los 30 pares más grandes salvo que se filtre: la de una comuna grande ya no desborda la respuesta. Cada salto de matrícula dice en qué nivel ocurre. La ficha de un colegio tiene un modo resumen, sin grados, para preguntas de evolución. Una suma de la que no se publica ninguna parte se declara suprimida, nunca como un cero. La búsqueda encuentra un colegio aunque el nombre venga con otra terminación («diaconal» → «Diácono»), el listado de una comuna cuadra con su panorama y dice la diferencia, y el saber declara que no tiene vista regional ni nacional ni grado por territorio.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `preguntas_abiertas`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2`
+
 ## v0.3.0 · 2026-11-04
 
 Pasa a evidencia@2, con la nueva regla de divulgación aprobada por Ernesto. La matrícula regular va exacta, por colegio, grado, dependencia y comuna: son los mismos conteos que el Mineduc publica en sus datos abiertos, y ya no hay «menos de 5», tramos ni «otros» en la matrícula. Quedan protegidos con k = 5 los desenlaces de los alumnos (llegadas, salidas, egresos, traslados) y la educación especial, que ahora está y va aparte: incluye las escuelas de lenguaje. La comuna se suma con la dependencia que cada colegio tenía ese año, y los cambios de dependencia se muestran. Los pares de colegios con nombre aparecen desde 5 alumnos (antes 30), con una ventana nueva, 2005–2010. Los traslados por el cierre o la absorción de un colegio van aparte y ya no inflan la captación. El aviso de saltos usa un umbral medido en todo el país (más de 50 %, con 100 alumnos o más).
