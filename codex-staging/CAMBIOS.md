@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.8.0 · 2026-11-05
+
+A qué institución entran. Los resultados dicen ahora, con nombre, a qué universidades, institutos y centros técnicos entraron los egresados de un colegio (agrupando cinco promociones) y de una comuna, una región o Chile (por promoción). Cada institución aparece desde cinco alumnos y el resto va junto. Describe adónde entraron, no lo bueno que es el colegio, y ninguna herramienta ordena colegios por destino. La tasa de ingreso del saber es la de los jóvenes; con el universo del SIES, que incluye a los egresados de adultos, el saber reproduce su cifra.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@4` · antes `evidencia@2+directorio@2+agregados@1+resultados@3`
+
 ## v0.7.0 · 2026-11-05
 
 Ingreso a la educación superior. Los resultados de un colegio, una comuna, una región o Chile traen ahora cuántos egresados de cada promoción se matricularon en la educación superior el año siguiente y en los tres años siguientes, y si fue en una universidad o en un instituto o centro técnico: en Chile, el ingreso inmediato pasó de 41 % en la promoción 2006 a 57 % en la de 2025. En los colegios chicos la proporción se protege como los alumnos prioritarios. A qué carrera o institución entran queda para una etapa siguiente. Además, el contexto de un colegio dice qué proporción de la comuna y del país rindió la PAES e ingresó a la educación superior.
