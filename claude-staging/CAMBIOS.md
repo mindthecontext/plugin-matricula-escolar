@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.4.0 · 2026-11-05
+
+Región y país. Dos herramientas nuevas responden sobre Chile entero y sobre cada región: cómo ha evolucionado la matrícula, por dependencia, por nivel, por nivel y dependencia a la vez, y por grado (por ejemplo, cuántos alumnos hay en 1° medio), con la educación especial aparte. Son la suma de todos los colegios, hecha y verificada por el laboratorio, y la región es la actual de cada comuna para toda la serie: Ñuble, Los Ríos y Arica y Parinacota tienen cifras también antes de existir, y se dice. La comuna también trae ahora su matrícula por grado y el cruce de nivel con dependencia. Los resultados por colegio quedan declarados como decididos y todavía sin compilar.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `ver_cambios` · aparece `panorama_pais`, `panorama_region`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+territorios@1` · antes `evidencia@2+directorio@2`
+
 ## v0.3.1 · 2026-11-04
 
 Lo que pidió la tercera ronda de pruebas. La matriz de una comuna ahora responde primero «¿hacia qué comunas salen y desde cuáles llegan?», con el nombre de cada comuna y lo que queda sin atribuir, y trae sólo los 30 pares más grandes salvo que se filtre: la de una comuna grande ya no desborda la respuesta. Cada salto de matrícula dice en qué nivel ocurre. La ficha de un colegio tiene un modo resumen, sin grados, para preguntas de evolución. Una suma de la que no se publica ninguna parte se declara suprimida, nunca como un cero. La búsqueda encuentra un colegio aunque el nombre venga con otra terminación («diaconal» → «Diácono»), el listado de una comuna cuadra con su panorama y dice la diferencia, y el saber declara que no tiene vista regional ni nacional ni grado por territorio.
