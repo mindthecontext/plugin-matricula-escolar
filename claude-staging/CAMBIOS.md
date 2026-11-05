@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.6.1 · 2026-11-05
+
+Corrección de los resultados por territorio. Algunos egresados quedaban en un grupo de dependencia «sin dato» cuando su colegio no tenía registro ese año, y en ciertas comunas ese grupo mostraba el promedio de una a cuatro personas. Ahora cada colegio toma la dependencia del año más cercano en que la tiene, y ese grupo desaparece. Las cifras de cada colegio y los totales no cambian.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@2` · antes `evidencia@2+directorio@2+agregados@1+resultados@1`
+
 ## v0.6.0 · 2026-11-05
 
 Resultados por colegio. Dos herramientas nuevas dan el NEM (promedio de notas de enseñanza media, desde 2005) y la PAES de cada promoción (Competencia Lectora, Matemática 1 y su promedio, desde 2022, con cuántos rindieron), de un colegio, una comuna, una región o Chile. La definición es la del informe por colegio del DEMRE y lo reproduce exacto. Cada resultado viene con su contexto y con la advertencia de que describe a los alumnos que rindieron y no la calidad del colegio: ninguna herramienta ordena colegios por resultado. Además, lo que pidió la quinta ronda de pruebas: la búsqueda encuentra con plurales («diaconales»), «estatal» dice que se leyó como público sin la administración delegada, la ficha explica qué es un alumno prioritario, la matriz trae la suma de saldos rotulada como mínimo y la comuna avisa cuando su especial es la de un solo colegio.
