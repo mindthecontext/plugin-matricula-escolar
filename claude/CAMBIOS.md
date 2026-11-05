@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.8.1 · 2026-11-05
+
+Textos y rótulos de las pruebas sobre resultados. Cuando el saber da una tasa de ingreso a la educación superior del país o de un territorio, avisa que es la de los jóvenes y que la cifra oficial del SIES es más baja porque incluye a la educación de adultos. Lo que se protege por tener menos de cinco alumnos ya no desaparece en silencio: el reparto entre universidad y técnico-profesional, y los años sin rendidores de la PAES, van rotulados. Se corrigieron textos que contradecían lo que el saber ya responde (a qué institución entran, dónde siguieron), y la cobertura declara que no hay titulación, ni SIMCE, ni rankings por destino.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@4`
+
 ## v0.8.0 · 2026-11-05
 
 A qué institución entran. Los resultados dicen ahora, con nombre, a qué universidades, institutos y centros técnicos entraron los egresados de un colegio (agrupando cinco promociones) y de una comuna, una región o Chile (por promoción). Cada institución aparece desde cinco alumnos y el resto va junto. Describe adónde entraron, no lo bueno que es el colegio, y ninguna herramienta ordena colegios por destino. La tasa de ingreso del saber es la de los jóvenes; con el universo del SIES, que incluye a los egresados de adultos, el saber reproduce su cifra.
