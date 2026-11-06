@@ -1,6 +1,6 @@
 ---
 name: leer-los-resultados
-description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior y a qué institución. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
+description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿qué carreras eligen?», «¿se concentran en pocas carreras?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior, a qué institución y a qué carrera. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
 ---
 
 # Leer los resultados
@@ -34,6 +34,12 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 - **`destino_es`**: a qué institución entraron, con nombre. En un colegio va **por ventana de cinco promociones**, que
   no se corta con `desde` y `hasta` y suma sólo las promociones con ingreso publicado (`promociones`); en un
   territorio, por promoción, con las `top` mayores y el resto en `mas_instituciones`.
+- **`carreras_es`** y **`areas_es`**: a qué carrera y a qué área del conocimiento entraron (ingreso directo). La
+  carrera es la **genérica** del SIES, igual en cualquier institución, con las especialidades de Ingeniería Civil y su
+  plan común juntas como «Ingeniería Civil». En un colegio van por ventana de cinco promociones, como `destino_es`; en
+  un territorio, por promoción con las `top` mayores. Cada una desde 5 alumnos y el resto en «otras».
+- **`concentracion`** (en el colegio, sólo con 30 o más que ingresan en la ventana): cuántas carreras suman la mitad
+  de los que ingresan (`carreras_que_suman_la_mitad`) y cuántas distintas. Pocas es concentración; muchas, dispersión.
 - **`tramo_alto`**: la **posición** de los alumnos en su promoción, no su puntaje: cuántos quedan en el 10 % y el 20 %
   superior de todos los jóvenes del país que rinden (los cortes, en `cortes_tramo_alto`). Se compara entre años aunque
   la escala cambie. En un colegio, por promoción (`top10`, `top20`); los prioritarios en el 20 %, sólo en la ventana
@@ -63,7 +69,10 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   está en el saber y no tuvo egresados de 4° medio de jóvenes con NEM en el período (por ejemplo, si sólo imparte
   básica o es de adultos), o el RBD no está. Da el motivo del aviso, no otro. Si acotaste los años, prueba sin acotar
   antes de decir que no tiene. No se le atribuyen las cifras de la comuna.
-- **Matricularse no es seguir estudiando ni titularse**, y el saber no dice a qué carrera, sólo a qué institución.
+- **Matricularse no es seguir estudiando ni titularse.** La institución (`destino_es`) y la carrera (`carreras_es`) van
+  por separado: el saber no dice qué carrera en qué institución. No las cruces.
+- **La concentración no es calidad ni vocación.** Que la mitad de los egresados de un colegio entre a 2 carreras y en
+  otro a 10 describe adónde entraron; depende del alumnado, del tamaño y de la oferta cercana.
 - **El tramo alto dice dónde están los alumnos de mejor puntaje, no qué colegio es mejor.** Un colegio grande aporta más
   alumnos al tramo sin tener mejor promedio, y uno chico no puede aportar muchos: para comparar, la proporción
   (`top10` sobre los que rindieron CL y M1, `rinden.rindieron_cl_y_m1`) con la de su comuna y el país en `contexto`
@@ -86,7 +95,7 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   pagado, administración delegada), no el del resultado.
 - **Comparar con la PSU.** La PAES empieza en la promoción 2022; la PSU tiene otra escala.
 - **Completar lo que no está**: SIMCE, percentil, ranking de notas, pruebas electivas (Matemática 2, Historia,
-  Ciencias), NEM por rama, la carrera de destino, la titulación.
+  Ciencias), NEM por rama, la carrera en cada institución, la titulación.
 
 ## Cierra con las fuentes
 

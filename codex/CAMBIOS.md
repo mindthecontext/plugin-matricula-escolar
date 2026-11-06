@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.11.0 · 2026-11-06
+
+Qué carreras eligen los egresados. Los resultados traen a qué carrera y a qué área del conocimiento entraron los egresados con ingreso directo a la educación superior: en un colegio, por ventana de cinco promociones, y en una comuna, una región o Chile, por promoción. La carrera es la genérica, la misma en cualquier institución, con las Ingenierías Civiles y su plan común juntas. Cada carrera va desde cinco alumnos y el resto en «otras». Un colegio trae además cuántas carreras suman la mitad de sus egresados: en el Instituto Nacional son seis, en el Colegio Tabancura dos. La carrera va por separado de la institución: el saber no dice qué carrera en qué institución.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@6` · antes `evidencia@2+directorio@2+agregados@1+resultados@5`
+
 ## v0.10.3 · 2026-11-06
 
 Sin cambios para quien usa el saber. En staging queda conectado el registro de consumo del cupo gratuito, que todavía no está encendido: hasta que se encienda, el saber responde exactamente como en la 0.10.2.

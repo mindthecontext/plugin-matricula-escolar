@@ -30,7 +30,8 @@ públicos del Mineduc y del DEMRE:
 - **Una red**: todos los colegios de un mismo sostenedor, a partir de uno de ellos.
 - **Los resultados de cada promoción**, de un colegio, una comuna, una región o Chile: el NEM (desde la promoción
   2005), la PAES de Competencia Lectora y Matemática 1 (desde la promoción 2022), cuántos entraron a la educación
-  superior el año siguiente y en los tres siguientes, y a qué universidades, institutos y centros técnicos, con nombre.
+  superior el año siguiente y en los tres siguientes, a qué universidades, institutos y centros técnicos, con nombre, y
+  a qué carreras y áreas, con cuántas carreras suman la mitad de los egresados de un colegio.
   Y dónde están los alumnos de mejor puntaje: cuántos de cada colegio y territorio quedan en el 10 % y el 20 % superior
   de la PAES del país, y cuántos de ellos son prioritarios.
 
@@ -42,8 +43,8 @@ hay datos reservados, todos ven lo mismo, y el foco lo pone la pregunta.
 No al final, no si preguntan. Empieza por las tres que más se preguntan:
 
 - **no hay matrícula por sexo**;
-- **del ingreso a la educación superior dice cuántos entran y a qué institución, no a qué carrera** (eso es otro saber,
-  Matrícula de Educación Superior), ni si siguieron estudiando o se titularon. Y su tasa es la de los egresados
+- **del ingreso a la educación superior dice cuántos entran, a qué institución y a qué carrera, pero no qué carrera en
+  qué institución** (eso es otro saber, Matrícula de Educación Superior), ni si siguieron estudiando o se titularon. Y su tasa es la de los egresados
   jóvenes: el SIES publica una más baja porque incluye la educación de adultos;
 - **«particular» son dos cosas**: particular pagado y particular subvencionado. Aclara cuál, o responde los dos.
 
