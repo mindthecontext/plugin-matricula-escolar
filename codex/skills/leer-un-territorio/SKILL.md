@@ -13,7 +13,8 @@ description: Responde sobre la matrícula escolar de una comuna, una región o C
 - **Una comuna**: `buscar_comuna` para su código si sólo tienes el nombre, y luego `panorama_comuna`.
 
 Acota los años con `desde` y `hasta`: la serie completa, 2004–2025, es pesada si basta un año. Con `grado=True`, la
-matrícula regular por grado (y la de una `dependencia`, si la pides).
+matrícula regular por grado (y la de una `dependencia`, si la pides). Con `dependencia`, el detalle por nivel y los
+prioritarios vienen sólo de esa dependencia, y la serie por dependencia sigue completa para ver su peso.
 
 **Si piden la lista de colegios** («¿qué liceos hay en Temuco?», «¿los más grandes?»): `colegios_comuna`, que filtra
 por dependencia, nivel y estado y ordena por matrícula. No los busques con palabras sueltas, y no reconstruyas la lista

@@ -27,7 +27,9 @@ Si la persona da el RBD, úsalo directo. Si menciona la comuna, pásala en `comu
    especial, a adultos, con los traslados agrupados por la dependencia y la comuna del otro colegio. Pide el `anio`:
    sin él trae los 21 años.
 3. **`corredores_colegio`** para los colegios **con nombre** de los que llegan y a los que se van, por ventana de cinco
-   años.
+   años. Pide la `ventana` (casi siempre 2021–2025) y, si la pregunta es de un lado, el `sentido` (sale o llega). Trae
+   los 15 pares más grandes de cada ventana y sentido: `no_mostrados` cuenta el resto, y el total sale de `cobertura`,
+   no de sumar los pares mostrados.
 
 ## Lo que se dice junto a la cifra
 

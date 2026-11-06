@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.9.2 · 2026-11-06
+
+Respuestas que caben. Los corredores de un colegio traen los 15 pares más grandes de cada ventana y sentido, y cuentan el resto: los del Instituto Nacional pasan de 70 KB a 12 con una ventana, y de 277 a 34 sin ella. Se puede pedir un solo sentido (sale o llega) o subir el tope hasta 200. La captación de una comuna trae los 30 colegios con más traslados que llegan y cuenta los demás. En el panorama de una comuna, una región o Chile, pedir una dependencia acota el detalle por nivel y los prioritarios a esa dependencia. Ninguna cifra cambia: los totales y la cobertura siguen siendo los de todos los pares y colegios.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@4`
+
 ## v0.9.1 · 2026-11-06
 
 Correcciones de la ronda 8. El panorama de una comuna decía que el saber no sabe dónde siguieron estudiando los egresados: lo sabe desde la versión 0.7, y ahora remite a resultados_territorio. La 0.8.1 anunció esta corrección sin que llegara al servidor. La matriz de una comuna avisa que «sale» y «llega» son sólo hacia y desde otras comunas, y que los traslados dentro de la comuna, que suelen ser la mayoría, van en «interno». Un colegio sin resultados dice cuál es el motivo: si está en el saber y no tuvo egresados de 4° medio, o si el RBD no está. Las skills enseñan a buscar un colegio sin «Liceo», «Colegio» ni «Escuela», a confirmar el colegio antes de buscar su red, y que una red puede repartirse en varios RUT.
