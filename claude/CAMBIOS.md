@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.9.0 · 2026-11-06
+
+Guías de lectura. Cinco skills nuevas enseñan a leer cada tipo de pregunta: un colegio, una comuna o una región, la red de un sostenedor, los movimientos de alumnos entre colegios y los resultados (NEM, PAES e ingreso a la educación superior). Dicen por dónde entrar, qué avisar junto a cada cifra y lo que nunca se hace, como ordenar colegios por resultado. La presentación del saber dejó de decir que no tiene resultados: los tiene desde la versión 0.6.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red` · aparece `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@4`
+
 ## v0.8.1 · 2026-11-05
 
 Textos y rótulos de las pruebas sobre resultados. Cuando el saber da una tasa de ingreso a la educación superior del país o de un territorio, avisa que es la de los jóvenes y que la cifra oficial del SIES es más baja porque incluye a la educación de adultos. Lo que se protege por tener menos de cinco alumnos ya no desaparece en silencio: el reparto entre universidad y técnico-profesional, y los años sin rendidores de la PAES, van rotulados. Se corrigieron textos que contradecían lo que el saber ya responde (a qué institución entran, dónde siguieron), y la cobertura declara que no hay titulación, ni SIMCE, ni rankings por destino.
