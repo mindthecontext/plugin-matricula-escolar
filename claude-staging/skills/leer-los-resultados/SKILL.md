@@ -37,10 +37,10 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   carrera es la **genérica** del SIES, igual en cualquier institución, con las especialidades de Ingeniería Civil y su
   plan común juntas como «Ingeniería Civil». En un colegio van por ventana de cinco promociones, como `destino_es`; en
   un territorio, por promoción con las `top` mayores. Cada una desde 5 alumnos y el resto en «otras».
-- **La ventana de un colegio puede sumar menos de cinco promociones.** `destino_es`, `carreras_es`, `areas_es` y
-  `concentracion` suman sólo las promociones con ingreso publicado (`promociones`). En los colegios donde entran casi
-  todos, las promociones con «todos menos de 5» quedan fuera: en el Colegio Tabancura, 2021–2025 suma sólo 2022 y 2025.
-  La herramienta lo avisa; **di cuántas promociones suma la ventana** y no presentes sus cifras como de las cinco.
+- **La ventana de un colegio suma sus promociones con 5 o más que ingresan** (`promociones`). Desde divulgacion@3 entran
+  también aquellas donde entraron casi todos: el Colegio Tabancura suma sus cinco promociones de 2021–2025. Queda fuera
+  una promoción donde entraron menos de 5, o que tuvo menos de 5 egresados. Si falta alguna, la herramienta lo avisa:
+  **di cuántas promociones suma la ventana** y no presentes sus cifras como de las cinco.
 - **`concentracion`** (en el colegio, sólo con 30 o más que ingresan en la ventana): cuántas carreras suman la mitad
   de los que ingresan (`carreras_que_suman_la_mitad`) y cuántas distintas. Pocas es concentración; muchas, dispersión.
 - **`tramo_alto`**: la **posición** de los alumnos en su promoción, no su puntaje: cuántos quedan en el 10 % y el 20 %
@@ -62,11 +62,11 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 - **La tasa del saber es la de los jóvenes.** Si das una tasa de ingreso del país o de un territorio, o la comparas
   con una oficial, di que el SIES publica otra más baja (50,4 % para la promoción 2025) porque incluye a los
   egresados de adultos, y **di cuál cifra es del saber y cuál del SIES**. La herramienta trae el aviso; repítelo.
-- **«menos de 5» y «todos menos de 5»** protegen a los alumnos de un colegio chico: «entraron todos salvo menos de 5»,
-  no «todos». No es cero ni es todos.
-- **Lo suprimido viene rotulado**: el reparto universidad/técnico-profesional con `suprimido_por_divulgacion`, y los
-  años de PAES de un colegio con NEM pero sin rendidores publicables como `sin_publicar` («ninguno o menos de 5»).
-  Dilo así; no lo leas como cero.
+- **«menos de 5» es de 1 a 4**, no cero. Desde divulgacion@3 («el agregado manda», decidida por Ernesto) toda cifra de
+  5 o más se publica aunque al restarla quede un grupo chico: «ingresan 92 de 95» va con su cifra, y en el reparto
+  universidad / técnico-profesional cada parte va con su cifra o como «menos de 5».
+- **Los años de PAES sin rendidores publicables** van como `sin_publicar` («ninguno o menos de 5»). Dilo así; no lo leas
+  como cero.
 - **`muestra_chica`** (menos de 30): se cita, no se interpreta como tendencia.
 - **Un colegio sin resultados** va en `sin_resultados`, y el aviso dice cuál de los dos motivos aplica: o el colegio
   está en el saber y no tuvo egresados de 4° medio de jóvenes con NEM en el período (por ejemplo, si sólo imparte

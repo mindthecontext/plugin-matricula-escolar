@@ -46,7 +46,8 @@ Si la persona da el RBD, úsalo directo. Si menciona la comuna, pásala en `comu
 - **`egresa` no es licenciarse ni entrar a la educación superior.** Es estar en 4° medio y no aparecer al año
   siguiente. Si la pregunta es si entraron a la educación superior y adónde, eso está en `resultados_colegio`
   (skill leer-los-resultados).
-- **«otros» es un grupo**, nunca un colegio ni una categoría. `suprimido_por_divulgacion` no es cero.
+- **«otros» junta las categorías de 1 a 4 alumnos**, nunca es un colegio. Si viene como «menos de 5», son entre 1 y 4
+  alumnos, no cero. Toda categoría de 5 o más va con su nombre (divulgacion@3).
 - **`estado` es el oficial.** Un liceo puede figurar «funcionando» con un `anio_ultimo` antiguo: su matrícula actual
   es de adultos y no está en este saber.
 

@@ -39,7 +39,7 @@ es una preferencia, y un saldo no es una nota.** Dilo antes de la primera cifra 
   sólo cuenta traslados entre colegios: no a quien entra desde parvularia, sin registro previo o desde adultos (eso
   está en `flujos_colegio`). Para listar colegios, `colegios_comuna`.
 - **Una fila `incompleto` no tiene saldo.** Tiene alguna parte con menos de 5: `suma_conocida` no es el total y
-  `suprimido_por_divulgacion` no es cero. Un `total` de 0 sí es cero.
+  «menos de 5» no es cero. Un `total` de 0 sí es cero.
 - **`muestra_chica`** (menos de 30 en la ventana): se cita con su cifra, sin leerlo como tendencia.
 
 ## Lo que nunca se dice

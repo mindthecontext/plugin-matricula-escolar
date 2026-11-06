@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.12.0 · 2026-11-06
+
+El agregado manda. Toda cifra de cinco o más se publica, aunque al restarla de otra quede un grupo de uno a cuatro alumnos; sólo las cifras de uno a cuatro siguen como «menos de 5». Desaparece «todos menos de 5»: el ingreso a la educación superior, el tramo alto y los prioritarios de un colegio se publican con su cifra aunque casi todos estén en el grupo. Los flujos de alumnos ya no ocultan bloques enteros, la educación especial publica cada nivel y grado de cinco o más, y el total de traslados de un colegio va exacto. Las ventanas de un colegio suman todas sus promociones donde entraron cinco o más: el Colegio Tabancura suma ahora sus cinco promociones de 2021–2025, con 492 que ingresan y 28 carreras distintas. Lo decidió Ernesto el 6 de noviembre.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@7` · antes `evidencia@2+directorio@2+agregados@1+resultados@6`
+
 ## v0.11.1 · 2026-11-06
 
 Correcciones de la ronda 10. Cuando la ventana de cinco promociones de un colegio suma menos promociones, el saber ahora lo dice: las promociones donde entraron todos salvo menos de cinco no se publican, para proteger a los pocos que no entraron, y quedan fuera de la ventana. Pasa sobre todo en los colegios donde casi todos siguen estudiando. En el Colegio Tabancura, la ventana 2021–2025 suma sólo 2022 y 2025, y el ejemplo de la versión 0.11.0 («en el Colegio Tabancura dos») es de esas dos promociones. Las fuentes nombran también la carrera y el área, y la guía de lectura de un colegio dice que una sigla como «INBA» se busca por el nombre completo.
