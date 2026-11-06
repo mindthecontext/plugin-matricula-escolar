@@ -14,6 +14,9 @@ cuatro, porque los otros se llaman «Colegio» y «Escuela». Si vuelve más de 
 **pregunta cuál es**, mostrando comuna, dependencia y si sigue abierto. Si no puedes preguntar, elige, **declara el
 supuesto** en la respuesta y ofrece los otros. El orden de los candidatos no es de relevancia.
 
+**Si te dan una sigla** («INBA», «IN»), la búsqueda no la reconoce: busca por el nombre completo («Internado Nacional
+Barros Arana») o pregunta cuál es.
+
 Si la persona da el RBD, úsalo directo. Si menciona la comuna, pásala en `comuna` para acotar.
 
 ## El orden

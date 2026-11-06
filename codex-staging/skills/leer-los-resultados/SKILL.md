@@ -38,6 +38,10 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   carrera es la **genérica** del SIES, igual en cualquier institución, con las especialidades de Ingeniería Civil y su
   plan común juntas como «Ingeniería Civil». En un colegio van por ventana de cinco promociones, como `destino_es`; en
   un territorio, por promoción con las `top` mayores. Cada una desde 5 alumnos y el resto en «otras».
+- **La ventana de un colegio puede sumar menos de cinco promociones.** `destino_es`, `carreras_es`, `areas_es` y
+  `concentracion` suman sólo las promociones con ingreso publicado (`promociones`). En los colegios donde entran casi
+  todos, las promociones con «todos menos de 5» quedan fuera: en el Colegio Tabancura, 2021–2025 suma sólo 2022 y 2025.
+  La herramienta lo avisa; **di cuántas promociones suma la ventana** y no presentes sus cifras como de las cinco.
 - **`concentracion`** (en el colegio, sólo con 30 o más que ingresan en la ventana): cuántas carreras suman la mitad
   de los que ingresan (`carreras_que_suman_la_mitad`) y cuántas distintas. Pocas es concentración; muchas, dispersión.
 - **`tramo_alto`**: la **posición** de los alumnos en su promoción, no su puntaje: cuántos quedan en el 10 % y el 20 %
@@ -100,4 +104,4 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 ## Cierra con las fuentes
 
 Desde `procedencia` y `procedencia.resultados`: el NEM es del Mineduc, la PAES del DEMRE, y el ingreso y el destino
-de la Matrícula de Educación Superior (SIES), y los prioritarios del tramo alto de Alumnos SEP (Mineduc); con la versión de la evidencia (`resultados@5`). Nunca de memoria.
+de la Matrícula de Educación Superior (SIES), y los prioritarios del tramo alto de Alumnos SEP (Mineduc); con la versión que trae `procedencia.resultados.version`. Nunca de memoria.
