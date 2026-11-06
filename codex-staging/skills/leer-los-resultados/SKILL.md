@@ -48,9 +48,10 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   años de PAES de un colegio con NEM pero sin rendidores publicables como `sin_publicar` («ninguno o menos de 5»).
   Dilo así; no lo leas como cero.
 - **`muestra_chica`** (menos de 30): se cita, no se interpreta como tendencia.
-- **Un colegio sin resultados** va en `sin_resultados`: no tuvo egresados de 4° medio de jóvenes con NEM en el
-  período (sólo imparte básica, es de adultos o cerró antes), o el RBD no está. Si acotaste los años, prueba sin
-  acotar antes de decir que no tiene. No se le atribuyen las cifras de la comuna.
+- **Un colegio sin resultados** va en `sin_resultados`, y el aviso dice cuál de los dos motivos aplica: o el colegio
+  está en el saber y no tuvo egresados de 4° medio de jóvenes con NEM en el período (por ejemplo, si sólo imparte
+  básica o es de adultos), o el RBD no está. Da el motivo del aviso, no otro. Si acotaste los años, prueba sin acotar
+  antes de decir que no tiene. No se le atribuyen las cifras de la comuna.
 - **Matricularse no es seguir estudiando ni titularse**, y el saber no dice a qué carrera, sólo a qué institución.
 
 ## Lo que nunca se hace

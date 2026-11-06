@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.9.1 · 2026-11-06
+
+Correcciones de la ronda 8. El panorama de una comuna decía que el saber no sabe dónde siguieron estudiando los egresados: lo sabe desde la versión 0.7, y ahora remite a resultados_territorio. La 0.8.1 anunció esta corrección sin que llegara al servidor. La matriz de una comuna avisa que «sale» y «llega» son sólo hacia y desde otras comunas, y que los traslados dentro de la comuna, que suelen ser la mayoría, van en «interno». Un colegio sin resultados dice cuál es el motivo: si está en el saber y no tuvo egresados de 4° medio, o si el RBD no está. Las skills enseñan a buscar un colegio sin «Liceo», «Colegio» ni «Escuela», a confirmar el colegio antes de buscar su red, y que una red puede repartirse en varios RUT.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@4`
+
 ## v0.9.0 · 2026-11-06
 
 Guías de lectura. Cinco skills nuevas enseñan a leer cada tipo de pregunta: un colegio, una comuna o una región, la red de un sostenedor, los movimientos de alumnos entre colegios y los resultados (NEM, PAES e ingreso a la educación superior). Dicen por dónde entrar, qué avisar junto a cada cifra y lo que nunca se hace, como ordenar colegios por resultado. La presentación del saber dejó de decir que no tiene resultados: los tiene desde la versión 0.6.

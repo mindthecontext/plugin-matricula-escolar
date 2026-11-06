@@ -8,8 +8,10 @@ description: Responde sobre la matrícula y los movimientos de alumnos de uno o 
 ## Primero, cuál colegio
 
 `buscar_colegio` siempre, antes de cualquier herramienta por colegio, aunque el nombre parezca inequívoco. Los
-nombres se repiten: «Liceo Carmela Carvajal» trae cuatro colegios (Talcahuano, San Felipe, Osorno y Providencia), e
-«Instituto Nacional» trae también un instituto de rehabilitación en Peñalolén. Si vuelve más de un candidato,
+nombres se repiten: «Carmela Carvajal» trae cuatro colegios (Talcahuano, San Felipe, Osorno y Providencia), e
+«Instituto Nacional» trae también un instituto de rehabilitación en Peñalolén. **Busca sin «Liceo», «Colegio» ni
+«Escuela»**: la búsqueda pide el texto tal cual dentro del nombre, y «Liceo Carmela Carvajal» trae sólo dos de los
+cuatro, porque los otros se llaman «Colegio» y «Escuela». Si vuelve más de un candidato,
 **pregunta cuál es**, mostrando comuna, dependencia y si sigue abierto. Si no puedes preguntar, elige, **declara el
 supuesto** en la respuesta y ofrece los otros. El orden de los candidatos no es de relevancia.
 

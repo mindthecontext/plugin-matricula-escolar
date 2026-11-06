@@ -13,8 +13,12 @@ es una preferencia, y un saldo no es una nota.** Dilo antes de la primera cifra 
 1. **`captacion_comuna`** para «¿qué colegios reciben y pierden más traslados?» en un año (por defecto 2025): por
    colegio, los traslados que llegan, los que salen y el saldo.
 2. **`matriz_comuna`** para «¿hacia qué comunas se van y desde cuáles llegan?» (`resumen_por_comuna`) y para los pares
-   colegio → colegio con nombre de una ventana de cinco años (por defecto 2021–2025). Filtra con `sentido` (sale,
-   llega, interno) o `contraparte_comuna`, o sube `top` (hasta 200): por defecto vienen los 30 pares más grandes.
+   colegio → colegio con nombre de una ventana de cinco años (por defecto 2021–2025). Filtra con `sentido` o
+   `contraparte_comuna`, o sube `top` (hasta 200): por defecto vienen los 30 pares más grandes.
+   **`sale` es sólo hacia OTRAS comunas** y `llega` sólo desde otras; los traslados entre colegios de la misma comuna
+   van en `interno` (`dentro_de_la_comuna` da el total). Suelen ser la mayoría: en Maipú, 2021–2025, el 91 % de las
+   salidas con nombre se quedan en la comuna. Para «¿a qué colegios se van los que dejan un colegio de X?», pide `sale`
+   e `interno`, o sin `sentido`; para «¿a qué comunas se van?», `sale` basta.
 3. **`corredores_colegio`** si la pregunta es de un colegio y sus competidores: los colegios con nombre de los que le
    llegan y a los que se le van alumnos, por ventana.
 

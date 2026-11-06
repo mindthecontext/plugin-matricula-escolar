@@ -9,6 +9,9 @@ saber. El valor está en la serie ordenada y en lo que no ve desde dentro, no en
 
 ## El orden
 
+0. **Primero, cuál colegio.** Si la persona nombra un colegio y no da el RBD ni el RUT, `buscar_colegio` (sin «Liceo»,
+   «Colegio» ni «Escuela»; con `comuna` si la menciona) y, si hay homónimos, pregunta cuál o declara el supuesto, como
+   en leer-un-colegio. «Patricio Mekis» trae tres colegios en tres comunas, de sostenedores distintos.
 1. **`colegios_del_sostenedor`** con un RBD de la red o con el RUT (sin puntos ni dígito verificador). Devuelve todos
    los colegios con el mismo RUT, abiertos y cerrados.
 2. **Confirma la red con quien pregunta** si la lista trae colegios que no esperaba, o le faltan: el RUT del
@@ -22,6 +25,9 @@ saber. El valor está en la serie ordenada y en lo que no ve desde dentro, no en
 - **El nombre del sostenedor no está.** Sólo su RUT. No lo completes con conocimiento general aunque lo sepas.
 - **El RUT viene en blanco** cuando el sostenedor no es persona jurídica, y **no existe antes de 2024** para los
   colegios que no están en los Directorios 2024–2025. Una red puede verse incompleta hacia atrás por eso: dilo.
+- **Una red puede repartirse en varios RUT.** En Maipú, la Escuela Hermanos Carrera y el Colegio Hermanos Carrera de
+  Chile (básica y media) tienen RUT distintos, y `colegios_del_sostenedor` no los une. Si la red parece incompleta,
+  dilo: puede tener otro RUT, y el saber no lo sabe. Pregúntale a quien consulta si hay otros colegios.
 - **Un SLEP no se sirve como territorio.** Sus colegios eran municipales antes de su creación, y falta la tabla comuna →
   SLEP de los que cerraron antes. Si preguntan por un SLEP, `colegios_del_sostenedor` da los colegios que hoy tienen su
   RUT, que no es la serie histórica del servicio.
