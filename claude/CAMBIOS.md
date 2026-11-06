@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.10.3 · 2026-11-06
+
+Sin cambios para quien usa el saber. En staging queda conectado el registro de consumo del cupo gratuito, que todavía no está encendido: hasta que se encienda, el saber responde exactamente como en la 0.10.2.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@5`
+
 ## v0.10.2 · 2026-11-06
 
 Sin cambios para quien usa el saber. Prepara el acceso con un cupo gratuito de consultas para quien no tiene contrato, que todavía no está encendido: hasta que se encienda, el saber responde exactamente como en la 0.10.1.
