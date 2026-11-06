@@ -31,6 +31,8 @@ públicos del Mineduc y del DEMRE:
 - **Los resultados de cada promoción**, de un colegio, una comuna, una región o Chile: el NEM (desde la promoción
   2005), la PAES de Competencia Lectora y Matemática 1 (desde la promoción 2022), cuántos entraron a la educación
   superior el año siguiente y en los tres siguientes, y a qué universidades, institutos y centros técnicos, con nombre.
+  Y dónde están los alumnos de mejor puntaje: cuántos de cada colegio y territorio quedan en el 10 % y el 20 % superior
+  de la PAES del país, y cuántos de ellos son prioritarios.
 
 Sirve igual a quien dirige un colegio, a un sostenedor con varios, a un SLEP, a un investigador o a una familia: no
 hay datos reservados, todos ven lo mismo, y el foco lo pone la pregunta.
@@ -86,7 +88,7 @@ se leen como tendencia.
   los egresos de cada año.
 - **Una región o Chile entero**: `panorama_region` o `panorama_pais`.
 - **Un sostenedor**: `colegios_del_sostenedor`.
-- **Resultados** (NEM, PAES, ingreso a la educación superior y a qué institución): `resultados_colegio` para uno o
+- **Resultados** (NEM, PAES, el tramo alto, ingreso a la educación superior y a qué institución): `resultados_colegio` para uno o
   varios colegios, `resultados_territorio` para una comuna, una región o Chile.
 
 Antes de interpretar, `obtener_criterios()`; si una pregunta toca una frontera, `preguntas_abiertas()`.

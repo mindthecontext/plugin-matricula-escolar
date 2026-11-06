@@ -1,6 +1,6 @@
 ---
 name: leer-los-resultados
-description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿cómo se compara mi colegio con la comuna?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), ingreso a la educación superior y a qué institución. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
+description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior y a qué institución. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
 ---
 
 # Leer los resultados
@@ -34,6 +34,14 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 - **`destino_es`**: a qué institución entraron, con nombre. En un colegio va **por ventana de cinco promociones**, que
   no se corta con `desde` y `hasta` y suma sólo las promociones con ingreso publicado (`promociones`); en un
   territorio, por promoción, con las `top` mayores y el resto en `mas_instituciones`.
+- **`tramo_alto`**: la **posición** de los alumnos en su promoción, no su puntaje: cuántos quedan en el 10 % y el 20 %
+  superior de todos los jóvenes del país que rinden (los cortes, en `cortes_tramo_alto`). Se compara entre años aunque
+  la escala cambie. En un colegio, por promoción (`top10`, `top20`); los prioritarios en el 20 %, sólo en la ventana
+  2022–2025 (`tramo_alto_prioritarios`). En un territorio, exacto: de cuántos colegios vienen y cuántos prioritarios
+  llegan (`prioritarios_top20` sobre `prioritarios_que_rinden`), y `distribucion_50`.
+- **`destacar`** (`resultados_territorio` con `destacar=True`): los colegios con financiamiento público que llevan 5 o
+  más prioritarios al 20 % superior en 2022–2025. En una comuna, por nombre; en una región, cuántos por comuna; en Chile,
+  cuántos por región. Es para mostrar que ese logro está repartido en muchos liceos.
 - **`contexto`** (en el colegio): la comuna, la misma dependencia en la comuna y en el país, el país y el % de
   prioritarios de la media. Úsalo para situar al colegio, con el `rinden` de cada uno, sin convertirlo en un puesto.
 
@@ -53,6 +61,13 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   básica o es de adultos), o el RBD no está. Da el motivo del aviso, no otro. Si acotaste los años, prueba sin acotar
   antes de decir que no tiene. No se le atribuyen las cifras de la comuna.
 - **Matricularse no es seguir estudiando ni titularse**, y el saber no dice a qué carrera, sólo a qué institución.
+- **El tramo alto dice dónde están los alumnos de mejor puntaje, no qué colegio es mejor.** Un colegio grande aporta más
+  alumnos al tramo sin tener mejor promedio, y uno chico no puede aportar muchos: para comparar, la proporción
+  (`top10` / `rinden`) con la de su comuna y el país en `contexto` (`en_el_10`, `en_el_20`).
+- **Los prioritarios tienen brecha.** Si el puntaje no dependiera de ser prioritario, el 20 % de ellos estaría en el
+  20 % superior; en el país llega cerca del 11 %, y casi no cambia entre 2022 y 2025. Dilo con la cifra.
+- **El universo es el de los jóvenes.** Si alguien cita que «cerca de 18 mil» están en el 10 % superior, es la cuenta
+  con todos los que rinden, incluidos los egresados de adultos (18.186 en la promoción 2025); el saber cuenta 17.476.
 
 ## Lo que nunca se hace
 
@@ -60,6 +75,9 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   ordenarlos por puntaje, por tasa de ingreso o por cuántos entran a una universidad: sería un ranking, y el saber lo
   declara no derivable. Si la persona compara colegios que ella eligió, da las cifras en el orden en que los nombró,
   cada una con su `rinden`.
+- **Ordenar colegios por cuántos aportan al tramo alto**, ni armar «los colegios con más alumnos en el 10 % superior»
+  pidiendo varios. Tampoco ordenar `destacar` por resultado ni decir que un colegio que no está es peor: puede tener
+  menos de 5 prioritarios en el tramo, menos alumnos o haber sido pagado algún año.
 - **Listar dependencias por puntaje.** Usa el orden de la herramienta (público, particular subvencionado, particular
   pagado, administración delegada), no el del resultado.
 - **Comparar con la PSU.** La PAES empieza en la promoción 2022; la PSU tiene otra escala.
@@ -69,4 +87,4 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 ## Cierra con las fuentes
 
 Desde `procedencia` y `procedencia.resultados`: el NEM es del Mineduc, la PAES del DEMRE, y el ingreso y el destino
-de la Matrícula de Educación Superior (SIES); con la versión de la evidencia (`resultados@4`). Nunca de memoria.
+de la Matrícula de Educación Superior (SIES), y los prioritarios del tramo alto de Alumnos SEP (Mineduc); con la versión de la evidencia (`resultados@5`). Nunca de memoria.

@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.10.0 · 2026-11-06
+
+Dónde están los alumnos de mejor puntaje. Los resultados traen el tramo alto de la PAES: cuántos de cada promoción quedan en el 10 % y el 20 % superior del país, que es una posición y no un puntaje, y por eso se compara entre años. En una comuna, una región o Chile, exacto: de cuántos colegios vienen, cuántos prioritarios llegan y cómo se reparten los puntajes en tramos de 50. En un colegio, cuántos quedan en cada tramo por promoción, y sus prioritarios en el 20 % superior sumando 2022 a 2025. Con destacar, los colegios con financiamiento público que llevan a cinco o más prioritarios al 20 % superior, por nombre y nunca ordenados por resultado. La mitad del 10 % superior viene de colegios con financiamiento público, y sólo uno de cada diez prioritarios llega al 20 % superior.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@2+directorio@2+agregados@1+resultados@5` · antes `evidencia@2+directorio@2+agregados@1+resultados@4`
+
 ## v0.9.2 · 2026-11-06
 
 Respuestas que caben. Los corredores de un colegio traen los 15 pares más grandes de cada ventana y sentido, y cuentan el resto: los del Instituto Nacional pasan de 70 KB a 12 con una ventana, y de 277 a 34 sin ella. Se puede pedir un solo sentido (sale o llega) o subir el tope hasta 200. La captación de una comuna trae los 30 colegios con más traslados que llegan y cuenta los demás. En el panorama de una comuna, una región o Chile, pedir una dependencia acota el detalle por nivel y los prioritarios a esa dependencia. Ninguna cifra cambia: los totales y la cobertura siguen siendo los de todos los pares y colegios.
