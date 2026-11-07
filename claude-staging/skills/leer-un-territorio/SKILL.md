@@ -1,5 +1,5 @@
 ---
-description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
+description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?», «¿por qué baja la matrícula?», «¿cuántos colegios han cerrado en mi comuna?», «¿adónde se fueron los alumnos del colegio que cerró?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
 ---
 
 # Leer un territorio
@@ -44,6 +44,31 @@ dentro de «otros» (`colegios_con_egreso_agrupado`), la suma es un mínimo («a
   Cada cifra trae `p` prioritarios entre `n` alumnos del nivel; da los dos.
 - **La especial va aparte** de la regular. `total_con_especial` las suma como lo hace el Mineduc; di cuál das.
 - **La parvularia es parcial**: sin JUNJI ni Integra. No sirve para la matrícula total de parvularia de un territorio.
+
+## Colegios, cierres y por qué cambia la matrícula
+
+Los tres panoramas traen `colegios_y_cierres` (cierres@1). En `panorama_pais` y `panorama_region` viene al pedir años
+(`desde=2021`, o `desde=2004` para toda la serie); en `panorama_comuna`, sin años, trae los últimos cinco.
+
+- **`colegios_por_anio`**: cuántos colegios tienen matrícula cada año, por dependencia. **`aperturas_y_cierres`**:
+  cuántos abren y cuántos cierran. Un colegio cierra el año siguiente a su último año con matrícula; `cierran_s5` se
+  vaciaron hacia un colegio que los absorbió o los sucedió. En la comuna, **`cierres`** los nombra en orden alfabético,
+  con su matrícula del último año y adónde fueron sus alumnos.
+- **`balance`**: para «¿por qué baja la matrícula?». El cambio entre un año y el siguiente es lo que entra (niños
+  nuevos en parvularia y en otros grados, alumnos de otras comunas) menos lo que sale (egresos de 4° medio, alumnos que
+  se van a otra comuna o que no vuelven sin haber egresado). Da primero el cambio y después qué parte lo explica: en
+  Chile, 2024→2025, la matrícula baja 38.306 con 188.861 niños nuevos en parvularia y 218.822 egresos.
+
+Junto a esas cifras se dice:
+
+- **El registro no dice por qué cierra un colegio.** No lo atribuyas a la matrícula, al financiamiento ni al sostenedor.
+- **«sin egresar» no es deserción.** Es no aparecer en la matrícula escolar del año siguiente: puede ser irse del país
+  o pasar a adultos.
+- **Los «nuevos en otro grado» no son «migrantes».** Son reingresos o llegadas desde fuera del sistema escolar; ninguna
+  base escolar trae la nacionalidad.
+- **Los nuevos de parvularia incluyen a los que vienen de JUNJI o Integra**, que el saber no cubre.
+- **Ninguna lista de colegios abiertos por cuánto cae su matrícula.** Se leería como «los que van a cerrar». Fuera de
+  la comuna va sólo `cambio_desde_2015`, una distribución sin nombres; un colegio con nombre, con su ficha.
 
 ## Lo que no es un territorio
 

@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.13.0 · 2026-11-07
+
+Cuántos colegios abren y cierran, y por qué cambia la matrícula. La comuna, la región y el país traen ahora cuántos colegios tienen matrícula cada año, cuántos abren y cuántos cierran, y el balance de la matrícula: los niños nuevos que entran, los que egresan, los que se van a otra comuna o no vuelven. En Chile hay 10.566 colegios en 2025, 1.226 menos que en 2012, y la caída de la matrícula desde 2022 viene sobre todo de que entran menos niños a la parvularia. La comuna nombra a los colegios que cerraron, con adónde fueron sus alumnos. El saber no dice por qué cierra un colegio, no lista colegios abiertos por su caída y no atribuye a la inmigración a los alumnos nuevos. Lo decidió Ernesto el 7 de noviembre.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@7+cierres@1` · antes `evidencia@3+directorio@2+agregados@2+resultados@7`
+
 ## v0.12.1 · 2026-11-07
 
 Lo que pidió la undécima ronda de pruebas. Un total publicado puede dejar calcular restando un grupo de uno a cuatro alumnos, como un grado de la educación especial o los pocos de un colegio que entraron a un técnico; ahora el saber le pide al asistente que no lo despeje: aunque la cuenta sea posible, esa cifra no se da. Las «otras» instituciones, carreras y áreas de uno a cuatro alumnos salen como «menos de 5», igual que las demás cifras chicas, y los criterios dejan de describir la regla anterior: la especial por grado, el grupo «otros» y la frase de los promedios, que siguen sin publicarse con menos de cinco alumnos.
