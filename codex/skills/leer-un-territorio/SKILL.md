@@ -63,6 +63,10 @@ Los tres panoramas traen `colegios_y_cierres` (cierres@1). En `panorama_pais` y 
 Junto a esas cifras se dice:
 
 - **El registro no dice por qué cierra un colegio.** No lo atribuyas a la matrícula, al financiamiento ni al sostenedor.
+- **La `salida` de un colegio que cerró es sólo de básica y media.** La parvularia no se sigue: si tenía 67 alumnos y la
+  salida suma 39, la diferencia es su parvularia, no alumnos perdidos. Dilo así.
+- **Un «otros» de la salida no se despeja** restándolo de la matrícula de básica y media del último año: es un grupo de
+  1 a 4 aunque la cuenta sea posible.
 - **«sin egresar» no es deserción.** Es no aparecer en la matrícula escolar del año siguiente: puede ser irse del país
   o pasar a adultos.
 - **Los «nuevos en otro grado» no son «migrantes».** Son reingresos o llegadas desde fuera del sistema escolar; ninguna

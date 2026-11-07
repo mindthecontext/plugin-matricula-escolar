@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.14.0 · 2026-11-07
+
+Gráficos y reportes con las fuentes a la vista. Una skill nueva, graficar-y-reportar, arma páginas con las láminas del saber: la matrícula o el ingreso a la educación superior por dependencia, el 10 % superior de la PAES, el balance de la matrícula y las listas de instituciones o carreras. Se leen bien con daltonismo, porque cada serie lleva color, forma y trazo, y cada reporte cierra con un bloque de fuentes y método armado desde la procedencia de los datos. Además, la salida de un colegio que cerró aclara que no incluye su parvularia, y el saber pide no despejar sus cifras chicas. Y una corrección: el cupo gratuito de consultas está encendido en staging desde el 6 de noviembre, aunque las notas de la 0.10.2 y la 0.10.3 dicen que no. Quien no tiene asiento usa ese cupo. Por ahora, una consulta es una sesión de llamadas seguidas, no una llamada: se cierra tras 3 minutos sin llamadas, a las 25 llamadas o a los 15 minutos. ver_cambios, listar_cobertura y registrar_impresion no gastan cupo. En producción el cupo no está encendido.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red` · aparece `graficar-y-reportar`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@7+cierres@1`
+
 ## v0.13.0 · 2026-11-07
 
 Cuántos colegios abren y cierran, y por qué cambia la matrícula. La comuna, la región y el país traen ahora cuántos colegios tienen matrícula cada año, cuántos abren y cuántos cierran, y el balance de la matrícula: los niños nuevos que entran, los que egresan, los que se van a otra comuna o no vuelven. En Chile hay 10.566 colegios en 2025, 1.226 menos que en 2012, y la caída de la matrícula desde 2022 viene sobre todo de que entran menos niños a la parvularia. La comuna nombra a los colegios que cerraron, con adónde fueron sus alumnos. El saber no dice por qué cierra un colegio, no lista colegios abiertos por su caída y no atribuye a la inmigración a los alumnos nuevos. Lo decidió Ernesto el 7 de noviembre.

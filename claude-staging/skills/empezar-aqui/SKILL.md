@@ -27,6 +27,8 @@ públicos del Mineduc y del DEMRE:
   fueron absorbidos.
 - **Una región o Chile entero**: la matrícula exacta por dependencia, nivel y grado, la especial y los prioritarios.
 - **Una red**: todos los colegios de un mismo sostenedor, a partir de uno de ellos.
+- **Gráficos y reportes**: láminas de la matrícula, el ingreso a la educación superior, el tramo alto o el balance de la
+  matrícula, legibles para daltónicos y con las fuentes y el método al pie (skill graficar-y-reportar).
 - **Los resultados de cada promoción**, de un colegio, una comuna, una región o Chile: el NEM (desde la promoción
   2005), la PAES de Competencia Lectora y Matemática 1 (desde la promoción 2022), cuántos entraron a la educación
   superior el año siguiente y en los tres siguientes, a qué universidades, institutos y centros técnicos, con nombre, y
