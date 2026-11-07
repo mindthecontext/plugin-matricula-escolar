@@ -65,6 +65,9 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 - **«menos de 5» es de 1 a 4**, no cero. Desde divulgacion@3 («el agregado manda», decidida por Ernesto) toda cifra de
   5 o más se publica aunque al restarla quede un grupo chico: «ingresan 92 de 95» va con su cifra, y en el reparto
   universidad / técnico-profesional cada parte va con su cifra o como «menos de 5».
+- **Un «menos de 5» no se despeja.** «Ingresan 134, a universidad 131» deja calcular la parte técnico-profesional, y
+  unas «otras» de 1 a 4 salen restando de lo que ingresa. Aunque la cuenta sea posible, esa cifra no se da. Si el
+  usuario pide la cuenta, explica que el saber no publica grupos de 1 a 4.
 - **Los años de PAES sin rendidores publicables** van como `sin_publicar` («ninguno o menos de 5»). Dilo así; no lo leas
   como cero.
 - **`muestra_chica`** (menos de 30): se cita, no se interpreta como tendencia.

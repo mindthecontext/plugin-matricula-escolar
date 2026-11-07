@@ -60,7 +60,7 @@ Y el resto de lo que **no** trae:
 - el **nombre del sostenedor**: sólo su RUT;
 - **proyecciones**: describe lo registrado, no anticipa;
 - cifras de **menos de 5 alumnos** en la educación especial y en lo que les pasa a los alumnos (llegadas, salidas,
-  egresos, traslados): van agrupadas o suprimidas para proteger a los niños, y eso no significa cero. La matrícula
+  egresos, traslados): van como «menos de 5» o juntas en «otros» para proteger a los niños, y eso no significa cero. La matrícula
   regular, en cambio, va exacta: es la misma que el Mineduc publica en sus datos abiertos.
 
 La lista completa y exacta viene en `no_derivable` de `listar_cobertura()`: úsala en vez de recitar ésta.

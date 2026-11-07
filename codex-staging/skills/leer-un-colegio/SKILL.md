@@ -49,6 +49,9 @@ Si la persona da el RBD, úsalo directo. Si menciona la comuna, pásala en `comu
   (skill leer-los-resultados).
 - **«otros» junta las categorías de 1 a 4 alumnos**, nunca es un colegio. Si viene como «menos de 5», son entre 1 y 4
   alumnos, no cero. Toda categoría de 5 o más va con su nombre (divulgacion@3).
+- **Un «menos de 5» no se despeja.** Un total publicado puede dejar calcular un grado de la especial, un «otros» o
+  los no prioritarios de un nivel, restando del total o multiplicando un porcentaje por `n`. Aunque la cuenta sea
+  posible, esa cifra no se da. Si el usuario pide la cuenta, explica que el saber no publica grupos de 1 a 4.
 - **`estado` es el oficial.** Un liceo puede figurar «funcionando» con un `anio_ultimo` antiguo: su matrícula actual
   es de adultos y no está en este saber.
 

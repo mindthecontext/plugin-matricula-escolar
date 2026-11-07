@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.12.1 · 2026-11-07
+
+Lo que pidió la undécima ronda de pruebas. Un total publicado puede dejar calcular restando un grupo de uno a cuatro alumnos, como un grado de la educación especial o los pocos de un colegio que entraron a un técnico; ahora el saber le pide al asistente que no lo despeje: aunque la cuenta sea posible, esa cifra no se da. Las «otras» instituciones, carreras y áreas de uno a cuatro alumnos salen como «menos de 5», igual que las demás cifras chicas, y los criterios dejan de describir la regla anterior: la especial por grado, el grupo «otros» y la frase de los promedios, que siguen sin publicarse con menos de cinco alumnos.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@7`
+
 ## v0.12.0 · 2026-11-06
 
 El agregado manda. Toda cifra de cinco o más se publica, aunque al restarla de otra quede un grupo de uno a cuatro alumnos; sólo las cifras de uno a cuatro siguen como «menos de 5». Desaparece «todos menos de 5»: el ingreso a la educación superior, el tramo alto y los prioritarios de un colegio se publican con su cifra aunque casi todos estén en el grupo. Los flujos de alumnos ya no ocultan bloques enteros, la educación especial publica cada nivel y grado de cinco o más, y el total de traslados de un colegio va exacto. Las ventanas de un colegio suman todas sus promociones donde entraron cinco o más: el Colegio Tabancura suma ahora sus cinco promociones de 2021–2025, con 492 que ingresan y 28 carreras distintas. Lo decidió Ernesto el 6 de noviembre.
