@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.15.0 · 2026-11-07
+
+Los egresados, por partes. resultados_territorio cruza ahora el ingreso a la educación superior de cada promoción por dependencia, sexo, condición de prioritario y posición del alumno dentro de su colegio (el 10 % superior, entre el 10 y el 30 %, o el resto), y dice cuántos estudian en la región de su colegio y adónde se van. En Chile, el 10 % superior de cada colegio entra a la educación superior en la misma proporción sea prioritario o no, y la diferencia está en el resto del curso; el 87 % de los que entran estudia en su región. Las regiones y el país van con cualquier cruce; una comuna, con dos a la vez. Además, las respuestas traen sus advertencias al principio, antes de los datos.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@8+cierres@1` · antes `evidencia@3+directorio@2+agregados@2+resultados@7+cierres@1`
+
 ## v0.14.0 · 2026-11-07
 
 Gráficos y reportes con las fuentes a la vista. Una skill nueva, graficar-y-reportar, arma páginas con las láminas del saber: la matrícula o el ingreso a la educación superior por dependencia, el 10 % superior de la PAES, el balance de la matrícula y las listas de instituciones o carreras. Se leen bien con daltonismo, porque cada serie lleva color, forma y trazo, y cada reporte cierra con un bloque de fuentes y método armado desde la procedencia de los datos. Además, la salida de un colegio que cerró aclara que no incluye su parvularia, y el saber pide no despejar sus cifras chicas. Y una corrección: el cupo gratuito de consultas está encendido en staging desde el 6 de noviembre, aunque las notas de la 0.10.2 y la 0.10.3 dicen que no. Quien no tiene asiento usa ese cupo. Por ahora, una consulta es una sesión de llamadas seguidas, no una llamada: se cierra tras 3 minutos sin llamadas, a las 25 llamadas o a los 15 minutos. ver_cambios, listar_cobertura y registrar_impresion no gastan cupo. En producción el cupo no está encendido.

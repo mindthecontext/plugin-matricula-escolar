@@ -58,6 +58,23 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
 - **`contexto`** (en el colegio): la comuna, la misma dependencia en la comuna y en el país, el país y el % de
   prioritarios de la media. Úsalo para situar al colegio, con el `rinden` de cada uno, sin convertirlo en un puesto.
 
+## El cubo de egresados (cruces)
+
+Para «¿cómo les va a los prioritarios?», «¿entran más las mujeres?», «¿qué pasa con los mejores de cada colegio?» o «¿se
+van a estudiar a otra región?»: `resultados_territorio` con `cruce` o `region_estudio=True`. Con esos parámetros la
+respuesta trae sólo el cubo, y pesa poco.
+
+- **Los cortes:** `dependencia`, `sexo`, `prioritario` (desde 2016) y `posicion`. Combínalos con «×»: por ejemplo
+  `cruce="prioritario×posicion"`. País y región aceptan cualquier combinación; una comuna, hasta dos.
+- **`posicion` es el decil de NEM dentro del colegio.** `top10` es el 10 % superior **de su colegio**, no del país (ese
+  es el tramo alto de la PAES). Dilo así, y no compares colegios con ella.
+- **Describe, no explica.** En 2025, el 10 % superior de cada colegio entra igual sea prioritario o no (73,2 % y 69,7 %
+  directo), y la brecha está en el resto del curso. El saber no mide becas, PACE ni la decisión de cada alumno: no
+  atribuyas la diferencia a ninguna de ellas.
+- **«sin_dato»** son egresados sin sexo o sin condición SEP en el registro, o promociones antes de 2016 en `prioritario`.
+- **`region_estudio`** (región y Chile): cuántos de los que ingresan estudian en la región de su colegio y adónde van.
+- **Para graficarlo**, la skill graficar-y-reportar: una `serie` por cruce, con `fmt: "pct"`.
+
 ## Lo que se dice junto a la cifra
 
 - **La tasa del saber es la de los jóvenes.** Si das una tasa de ingreso del país o de un territorio, o la comparas

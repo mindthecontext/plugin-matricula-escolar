@@ -102,6 +102,10 @@ Una ficha con muchos colegios y toda la serie 2004–2025 es pesada: si basta un
 
 ## Qué hay de nuevo, y qué versión responde
 
+Si preguntan si hay un **límite de uso o un costo**: en staging, quien no tiene asiento usa un cupo gratuito de consultas,
+y la regla vigente está en la entrada más reciente de `ver_cambios()` que hable del cupo. Léela ahí; no la inventes ni la
+des por apagada.
+
 Si preguntan qué cambió o qué versión está activa, llama `ver_cambios()` y responde con lo que trae. No lo
 reconstruyas de memoria; si el registro no tiene entrada para la versión en curso, dilo así.
 
