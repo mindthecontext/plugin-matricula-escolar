@@ -1,5 +1,5 @@
 ---
-description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿qué carreras eligen?», «¿se concentran en pocas carreras?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior, a qué institución y a qué carrera. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
+description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿qué carreras eligen?», «¿se concentran en pocas carreras?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Y el ingreso cruzado: «¿entran más las mujeres o los hombres?», «¿cómo les va a los prioritarios?», «¿y a los mejores de cada colegio?», «¿cuántos se van a estudiar a otra región?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior, a qué institución y a qué carrera. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
 ---
 
 # Leer los resultados
@@ -65,6 +65,12 @@ respuesta trae sólo el cubo, y pesa poco.
 
 - **Los cortes:** `dependencia`, `sexo`, `prioritario` (desde 2016) y `posicion`. Combínalos con «×»: por ejemplo
   `cruce="prioritario×posicion"`. País y región aceptan cualquier combinación; una comuna, hasta dos.
+- **Las proporciones ya vienen sobre los egresados:** `proporcion` (directo), `proporcion_universidad`,
+  `proporcion_tecnico_profesional` y `proporcion_a_3_anios`. Úsalas; no dividas a mano, y nunca por `directo`.
+- **En la comuna, ninguna cifra describe a un solo colegio.** Si la respuesta trae `promociones_sin_cubo` (la comuna
+  tuvo un solo colegio con egresados), `promociones_sin_cruces_con_dependencia` o `dependencias_en_otras` («otras»
+  junta dependencias de un solo colegio, que pueden ser distintas: di cuáles), dilo y ofrece la región. El «menos de
+  5» no oculta a nadie, evita imprimir cifras de una a cuatro personas: no lo despejes restando.
 - **`posicion` es el decil de NEM dentro del colegio.** `top10` es el 10 % superior **de su colegio**, no del país (ese
   es el tramo alto de la PAES). Dilo así, y no compares colegios con ella.
 - **Describe, no explica.** En 2025, el 10 % superior de cada colegio entra igual sea prioritario o no (73,2 % y 69,7 %
@@ -72,6 +78,8 @@ respuesta trae sólo el cubo, y pesa poco.
   atribuyas la diferencia a ninguna de ellas.
 - **«sin_dato»** son egresados sin sexo o sin condición SEP en el registro, o promociones antes de 2016 en `prioritario`.
 - **`region_estudio`** (región y Chile): cuántos de los que ingresan estudian en la región de su colegio y adónde van.
+  La región del colegio es la actual; la de la sede, la que registró el SIES ese año: antes de 2018 una sede que hoy
+  está en Ñuble figura en el Biobío.
 - **Para graficarlo**, la skill graficar-y-reportar: una `serie` por cruce, con `fmt: "pct"`.
 
 ## Lo que se dice junto a la cifra

@@ -43,7 +43,8 @@ hay datos reservados, todos ven lo mismo, y el foco lo pone la pregunta.
 
 No al final, no si preguntan. Empieza por las tres que más se preguntan:
 
-- **no hay matrícula por sexo**;
+- **no hay matrícula por sexo**, pero el ingreso de los egresados a la educación superior **sí** va por sexo, por
+  prioritario, por dependencia y por su posición en el colegio (`resultados_territorio` con `cruce`);
 - **del ingreso a la educación superior dice cuántos entran, a qué institución y a qué carrera, pero no qué carrera en
   qué institución** (eso es otro saber, Matrícula de Educación Superior), ni si siguieron estudiando o se titularon. Y su tasa es la de los egresados
   jóvenes: el SIES publica una más baja porque incluye la educación de adultos;

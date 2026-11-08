@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.16.0 · 2026-11-07
+
+El ingreso de los egresados por comuna, sin el de un colegio con nombre. Cuando una comuna tuvo un solo colegio con egresados, esa promoción va sin cruces y la respuesta ofrece la región; en los cruces con dependencia, las dependencias de un solo colegio van juntas en «otras», y la respuesta dice cuáles. Cada cifra del cruce trae ahora su proporción de universidad, técnico-profesional y a tres años sobre los egresados, para no dividir a mano. Y los textos dicen la regla como es: el «menos de 5» evita imprimir cifras de una a cuatro personas.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@9+cierres@1` · antes `evidencia@3+directorio@2+agregados@2+resultados@8+cierres@1`
+
 ## v0.15.0 · 2026-11-07
 
 Los egresados, por partes. resultados_territorio cruza ahora el ingreso a la educación superior de cada promoción por dependencia, sexo, condición de prioritario y posición del alumno dentro de su colegio (el 10 % superior, entre el 10 y el 30 %, o el resto), y dice cuántos estudian en la región de su colegio y adónde se van. En Chile, el 10 % superior de cada colegio entra a la educación superior en la misma proporción sea prioritario o no, y la diferencia está en el resto del curso; el 87 % de los que entran estudia en su región. Las regiones y el país van con cualquier cruce; una comuna, con dos a la vez. Además, las respuestas traen sus advertencias al principio, antes de los datos.
