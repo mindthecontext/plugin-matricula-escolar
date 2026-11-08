@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.16.1 · 2026-11-08
+
+Sólo en staging, donde el acceso es medido: cuando se acaban tus créditos gratuitos, el aviso ahora habla de créditos y te dice qué es uno (cada vez que Claude consulta el servicio usa un crédito), que esa consulta no se ejecutó ni se descontó y cuándo vuelven. obtener_criterios y preguntas_abiertas ya no gastan créditos. En producción el cupo no está encendido.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@9+cierres@1`
+
 ## v0.16.0 · 2026-11-07
 
 El ingreso de los egresados por comuna, sin el de un colegio con nombre. Cuando una comuna tuvo un solo colegio con egresados, esa promoción va sin cruces y la respuesta ofrece la región; en los cruces con dependencia, las dependencias de un solo colegio van juntas en «otras», y la respuesta dice cuáles. Cada cifra del cruce trae ahora su proporción de universidad, técnico-profesional y a tres años sobre los egresados, para no dividir a mano. Y los textos dicen la regla como es: el «menos de 5» evita imprimir cifras de una a cuatro personas.
