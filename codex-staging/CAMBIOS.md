@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.18.0 · 2026-11-08
+
+Si no pides años, los panoramas de comuna, región y país traen los últimos cinco (2021–2025), con la serie de colegios, cierres y balance, y lo dicen al principio; el cubo de egresados, las últimas cinco promociones. Para la serie completa, pide desde=2004 (o desde=2006 en el cubo). La desvinculación escolar no se deriva de este saber: con los registros públicos no se replica la cifra oficial desde 2022, así que se cita la del Mineduc con su fuente. Textos corregidos: «otras» junta la dependencia de un solo colegio con la de menos colegios, que puede tener varios; el motivo de una promoción sin cruces con dependencia dice la regla tal como es; el rechazo de tres cortes en una comuna da lo medido; y la matrícula no va por sexo, aunque el ingreso de los egresados sí.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@9+cierres@1`
+
 ## v0.17.0 · 2026-11-08
 
 panorama_region trae ahora, para cada comuna de la región, su matrícula regular del primer y del último año del rango pedido y la variación entre ambos (número y %). «¿Qué comunas de la región pierden o ganan alumnos?» se responde con una sola consulta, en vez de una por comuna; las cifras cuadran con las de panorama_comuna.

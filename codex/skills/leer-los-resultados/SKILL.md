@@ -70,7 +70,8 @@ respuesta trae sólo el cubo, y pesa poco.
   `proporcion_tecnico_profesional` y `proporcion_a_3_anios`. Úsalas; no dividas a mano, y nunca por `directo`.
 - **En la comuna, ninguna cifra describe a un solo colegio.** Si la respuesta trae `promociones_sin_cubo` (la comuna
   tuvo un solo colegio con egresados), `promociones_sin_cruces_con_dependencia` o `dependencias_en_otras` («otras»
-  junta dependencias de un solo colegio, que pueden ser distintas: di cuáles), dilo y ofrece la región. El «menos de
+  junta la dependencia de un solo colegio con la de menos colegios de las demás, que puede tener varios: di cuáles van
+  juntas y no digas que todas son de un solo colegio), dilo y ofrece la región. El «menos de
   5» no oculta a nadie, evita imprimir cifras de una a cuatro personas: no lo despejes restando.
 - **`posicion` es el decil de NEM dentro del colegio.** `top10` es el 10 % superior **de su colegio**, no del país (ese
   es el tramo alto de la PAES). Dilo así, y no compares colegios con ella.

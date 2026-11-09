@@ -48,8 +48,9 @@ dentro de «otros» (`colegios_con_egreso_agrupado`), la suma es un mínimo («a
 
 ## Colegios, cierres y por qué cambia la matrícula
 
-Los tres panoramas traen `colegios_y_cierres` (cierres@1). En `panorama_pais` y `panorama_region` viene al pedir años
-(`desde=2021`, o `desde=2004` para toda la serie); en `panorama_comuna`, sin años, trae los últimos cinco.
+Los tres panoramas traen `colegios_y_cierres` (cierres@1). **Sin años, los panoramas traen los últimos cinco
+(2021–2025)**, con su `colegios_y_cierres`, y el primer aviso lo dice: si la pregunta es por la evolución larga, pide
+`desde=2004` y dilo en la respuesta.
 
 - **`colegios_por_anio`**: cuántos colegios tienen matrícula cada año, por dependencia. **`aperturas_y_cierres`**:
   cuántos abren y cuántos cierran. Un colegio cierra el año siguiente a su último año con matrícula; `cierran_s5` se

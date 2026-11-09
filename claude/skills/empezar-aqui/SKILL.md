@@ -63,7 +63,7 @@ Y el resto de lo que **no** trae:
 - el **nombre del sostenedor**: sólo su RUT;
 - **proyecciones**: describe lo registrado, no anticipa;
 - cifras de **menos de 5 alumnos** en la educación especial y en lo que les pasa a los alumnos (llegadas, salidas,
-  egresos, traslados): van como «menos de 5» o juntas en «otros» para proteger a los niños, y eso no significa cero. La matrícula
+  egresos, traslados): van como «menos de 5» o juntas en «otros», y eso no significa cero: es de 1 a 4. No oculta a nadie, evita imprimir cifras de una a cuatro personas, y no se despeja restando. La matrícula
   regular, en cambio, va exacta: es la misma que el Mineduc publica en sus datos abiertos.
 
 La lista completa y exacta viene en `no_derivable` de `listar_cobertura()`: úsala en vez de recitar ésta.
@@ -99,7 +99,7 @@ Antes de interpretar, `obtener_criterios()`; si una pregunta toca una frontera, 
 Para leer bien cada tipo de pregunta hay una skill: leer-un-colegio, leer-un-territorio, leer-una-red,
 leer-un-mercado y leer-los-resultados.
 
-Una ficha con muchos colegios y toda la serie 2004–2025 es pesada: si basta un año, pide `desde` y `hasta` iguales.
+Una ficha con muchos colegios y toda la serie 2004–2025 es pesada: si basta un año, pide `desde` y `hasta` iguales. Los panoramas y el cubo de egresados, sin años, traen los últimos cinco: para la serie completa, `desde=2004`.
 
 ## Qué hay de nuevo, y qué versión responde
 
