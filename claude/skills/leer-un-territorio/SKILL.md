@@ -1,5 +1,5 @@
 ---
-description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?», «¿por qué baja la matrícula?», «¿cuántos colegios han cerrado en mi comuna?», «¿adónde se fueron los alumnos del colegio que cerró?», «¿cuánto será la matrícula de 1° básico en 2035?», «¿cómo cambiará la matrícula en los próximos 20 años?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
+description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?», «¿por qué baja la matrícula?», «¿cuántos colegios han cerrado en mi comuna?», «¿adónde se fueron los alumnos del colegio que cerró?», «¿cuánto será la matrícula de 1° básico en 2035?», «¿cómo cambiará la matrícula en los próximos 20 años?», «¿cuánto faltan a clases los alumnos de mi comuna?», «¿cuántos tienen inasistencia grave?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
 ---
 
 # Leer un territorio
@@ -74,6 +74,24 @@ Junto a esas cifras se dice:
 - **Los nuevos de parvularia incluyen a los que vienen de JUNJI o Integra**, que el saber no cubre.
 - **Ninguna lista de colegios abiertos por cuánto cae su matrícula.** Se leería como «los que van a cerrar». Fuera de
   la comuna va sólo `cambio_desde_2015`, una distribución sin nombres; un colegio con nombre, con su ficha.
+
+## La asistencia
+
+Para «¿cuánto faltan los alumnos?» o «¿cuántos tienen inasistencia grave?»: `asistencia`, de un colegio, una comuna,
+una región o Chile, en 2018, 2019 y 2022–2024.
+
+- **Di la tasa y las categorías como vienen.** La tasa acumulada es días asistidos sobre días trabajados. Las categorías
+  son las del Mineduc: esperada (90 % o más), reiterada (85 a 90 %), grave (50 a 85 %) y crítica (menos de 50 %).
+  `bajo_85` es grave más crítica. Usa las proporciones que vienen; no dividas a mano.
+- **Sin particular pagado y sin adultos.** La base del Mineduc no trae el particular pagado: dilo siempre, y con más
+  fuerza si el primer aviso dice que en ese territorio pesa. `cobertura` dice qué parte de la matrícula cubre.
+- **2020 y 2021 no existen, y 2019 coincide con el estallido social.** Para hablar del efecto de la pandemia, compara
+  con 2018.
+- **Cortes:** en territorio, `corte` = dependencia, sexo o prioritario. En el colegio, ninguno: va por nivel, con
+  k = 5, y con su comuna como contexto.
+- **La cifra oficial difiere un poco en las categorías** (el Mineduc redondea la tasa de cada alumno y cuenta adultos).
+  Si la citas, di que es otra medición.
+- **No expliques ni ordenes.** La base no dice por qué falta un alumno, y ningún colegio es «el que más falta».
 
 ## La matrícula futura
 

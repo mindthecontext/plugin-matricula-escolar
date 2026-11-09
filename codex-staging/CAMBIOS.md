@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.21.0 · 2026-11-09
+
+Nueva herramienta asistencia: la asistencia y el ausentismo crónico de un colegio, una comuna, una región o Chile, en 2018, 2019 y 2022 a 2024 (2020 y 2021 no existen). Trae la tasa de asistencia y cuántos alumnos tienen asistencia esperada o inasistencia reiterada, grave o crítica, con las categorías del Mineduc, por nivel; en el territorio, también por dependencia, sexo y prioritario, y qué parte de la matrícula cubre. No incluye el particular pagado, que la base del Mineduc no trae, ni la educación de adultos, y no ordena colegios por asistencia.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `asistencia`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1+asistencia@1` · antes `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1`
+
 ## v0.20.0 · 2026-11-09
 
 En el cubo de egresados de una comuna, cuando los cruces con dependencia juntan dependencias en «otras» o una promoción va sin esos cruces, la respuesta dice ahora cuál es la dependencia de un solo colegio y cuál se le juntó, con cuántos colegios tiene. Por ejemplo, en Temuco, la administración delegada tiene un colegio y va con el particular pagado, que tiene varios. La cobertura del saber describe esa regla tal como es, y en los cruces de tres cortes da lo medido: con dos cortes, entre el 10 y el 23 % de las celdas queda bajo 5; con cuatro, el 34 %; con tres no se midió.
