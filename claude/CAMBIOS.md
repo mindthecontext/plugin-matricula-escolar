@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.19.0 · 2026-11-09
+
+Nueva herramienta proyeccion_matricula: la matrícula regular de Chile de 1° básico a 4° medio estimada para cada año entre 2026 y 2050, con la proyección de población del INE (base Censo 2024) y la cobertura de cada grado en 2025. Trae 1° básico, básica, media y el total, con un escenario central, una banda y el cambio desde 2025, y dice desde qué año la cifra depende de niños que todavía no nacen. Es una estimación con supuestos, no un pronóstico, y es solo del país: por región, comuna o colegio no hay.
+
+- Herramientas: `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `proyeccion_matricula`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@9+cierres@1+proyecciones@1` · antes `evidencia@3+directorio@2+agregados@2+resultados@9+cierres@1`
+
 ## v0.18.0 · 2026-11-08
 
 Si no pides años, los panoramas de comuna, región y país traen los últimos cinco (2021–2025), con la serie de colegios, cierres y balance, y lo dicen al principio; el cubo de egresados, las últimas cinco promociones. Para la serie completa, pide desde=2004 (o desde=2006 en el cubo). La desvinculación escolar no se deriva de este saber: con los registros públicos no se replica la cifra oficial desde 2022, así que se cita la del Mineduc con su fuente. Textos corregidos: «otras» junta la dependencia de un solo colegio con la de menos colegios, que puede tener varios; el motivo de una promoción sin cruces con dependencia dice la regla tal como es; el rechazo de tres cortes en una comuna da lo medido; y la matrícula no va por sexo, aunque el ingreso de los egresados sí.

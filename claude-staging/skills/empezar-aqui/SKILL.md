@@ -61,7 +61,9 @@ Y el resto de lo que **no** trae:
 - **por qué** un colegio gana o pierde alumnos (la dinámica por colegio todavía no está compilada);
 - matrícula por **género**, asistencia, postulación SAE, valor agregado;
 - el **nombre del sostenedor**: sólo su RUT;
-- **proyecciones**: describe lo registrado, no anticipa;
+- **proyecciones por colegio, comuna o región**: no las hay. Para Chile sí hay una estimación de la matrícula hasta
+  2050 (`proyeccion_matricula`), hecha con la proyección de población del INE: se presenta como estimación con
+  supuestos, nunca como pronóstico;
 - cifras de **menos de 5 alumnos** en la educación especial y en lo que les pasa a los alumnos (llegadas, salidas,
   egresos, traslados): van como «menos de 5» o juntas en «otros», y eso no significa cero: es de 1 a 4. No oculta a nadie, evita imprimir cifras de una a cuatro personas, y no se despeja restando. La matrícula
   regular, en cambio, va exacta: es la misma que el Mineduc publica en sus datos abiertos.

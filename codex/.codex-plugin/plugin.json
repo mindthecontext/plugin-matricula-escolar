@@ -1,6 +1,6 @@
 {
   "name": "matricula-escolar",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Matrícula escolar en Chile por colegio, comuna y red, 2004–2025: quién llega, quién se va y adónde, con divulgación aplicada y trazabilidad a los datos abiertos del Mineduc.",
   "author": {
     "name": "MindTheContext"

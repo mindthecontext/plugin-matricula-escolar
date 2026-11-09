@@ -1,5 +1,5 @@
 ---
-description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?», «¿por qué baja la matrícula?», «¿cuántos colegios han cerrado en mi comuna?», «¿adónde se fueron los alumnos del colegio que cerró?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
+description: Responde sobre la matrícula escolar de una comuna, una región o Chile entero — «¿cuántos alumnos hay en Temuco?», «¿cómo ha cambiado la matrícula pública en la Araucanía?», «¿cuántos alumnos hay en 1° medio en Chile?», «¿qué proporción son prioritarios?», «¿cuántos egresan de 4° medio en mi comuna?», «¿por qué baja la matrícula?», «¿cuántos colegios han cerrado en mi comuna?», «¿adónde se fueron los alumnos del colegio que cerró?», «¿cuánto será la matrícula de 1° básico en 2035?», «¿cómo cambiará la matrícula en los próximos 20 años?». Para listar u ordenar los colegios de una comuna, colegios_comuna; para los resultados de un territorio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los movimientos de alumnos entre colegios y comunas, leer-un-mercado.
 ---
 
 # Leer un territorio
@@ -74,6 +74,24 @@ Junto a esas cifras se dice:
 - **Los nuevos de parvularia incluyen a los que vienen de JUNJI o Integra**, que el saber no cubre.
 - **Ninguna lista de colegios abiertos por cuánto cae su matrícula.** Se leería como «los que van a cerrar». Fuera de
   la comuna va sólo `cambio_desde_2015`, una distribución sin nombres; un colegio con nombre, con su ficha.
+
+## La matrícula futura
+
+Para «¿cuánto será la matrícula de 1° básico en 2035?» o «¿cómo cambia la media en 5, 10, 15, 20 y 25 años?»:
+`proyeccion_matricula`. Es **solo del país**. Sin años trae los horizontes de 5, 10, 15, 20 y 25 años (2030–2050,
+cada cinco); para cada año, `desde` y `hasta` (todos: `desde=2026`).
+
+- **Es una estimación, no un pronóstico.** Población del INE (base Censo 2024) con la edad de cada grado, por la
+  cobertura de ese grado en 2025. Dilo así, con los supuestos: fecundidad, mortalidad y migración del INE, y que la
+  cobertura no cambie.
+- **Di desde qué año depende de niños que no han nacido** (`grados_por_nacer`; en 1° básico, desde 2032). Antes de eso,
+  la mayor fuente de error es la migración.
+- **Da la banda** (`bajo`–`alto`) y redondea a miles. La banda cubre cambios de cobertura como los de 2022–2025, no
+  un error de la proyección del INE.
+- **Usa `cambio_desde_2025`**, que ya viene calculado, para los horizontes. No dividas a mano.
+- **Por región, comuna o colegio no hay**, y no se arma repartiendo la cifra del país: dilo y ofrece la de Chile o la
+  serie observada del territorio (`panorama_region`, `panorama_comuna`).
+- **No expliques por qué baja la natalidad.** El saber no lo mide.
 
 ## Lo que no es un territorio
 
