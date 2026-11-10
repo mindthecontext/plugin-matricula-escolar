@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.23.0 · 2026-11-10
+
+Llega la matrícula 2026, publicada por el Mineduc el 28 de octubre, con el Directorio 2026: el saber cubre ahora 2004–2026. Sin años, los panoramas traen 2022–2026; los colegios y la captación de una comuna van por defecto en 2026; los cierres usan el estado del Directorio 2026; y la última ventana de corredores pasa a 2021–2026. La matrícula futura se estima ahora con 2026 como año observado (2027–2050): 1° básico baja a unos 123 mil alumnos en 2035. En 2026 no hay prioritarios, porque la base SEP de ese año aún no se publica: el saber lo dice en vez de mostrar cero. Los resultados siguen con la promoción 2025 y la asistencia con 2025, los últimos publicados.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3` · antes `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1+asistencia@2`
+
 ## v0.22.0 · 2026-11-10
 
 La asistencia trae ahora nueve años: de 2015 a 2019 y de 2022 a 2025. Usa los archivos que el Mineduc volvió a publicar en febrero de 2026, en los que cada alumno queda en su último colegio del año y los días de suspensión de clases cuentan como no trabajados; las cifras nacionales casi no cambian, pero las de algunas comunas y colegios sí. Para comparar con antes de la pandemia, la respuesta usa 2015–2018 como rango, porque la asistencia venía subiendo esos años. En 2015 no hay corte por alumnos prioritarios.

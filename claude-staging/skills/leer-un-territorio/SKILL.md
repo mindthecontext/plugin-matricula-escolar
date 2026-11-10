@@ -11,7 +11,7 @@ description: Responde sobre la matrícula escolar de una comuna, una región o C
   bajar a una.
 - **Una comuna**: `buscar_comuna` para su código si sólo tienes el nombre, y luego `panorama_comuna`.
 
-Acota los años con `desde` y `hasta`: la serie completa, 2004–2025, es pesada si basta un año. Con `grado=True`, la
+Acota los años con `desde` y `hasta`: la serie completa, 2004–2026, es pesada si basta un año. Con `grado=True`, la
 matrícula regular por grado (y la de una `dependencia`, si la pides). Con `dependencia`, el detalle por nivel y los
 prioritarios vienen sólo de esa dependencia, y la serie por dependencia sigue completa para ver su peso.
 
@@ -48,7 +48,7 @@ dentro de «otros» (`colegios_con_egreso_agrupado`), la suma es un mínimo («a
 ## Colegios, cierres y por qué cambia la matrícula
 
 Los tres panoramas traen `colegios_y_cierres` (cierres@1). **Sin años, los panoramas traen los últimos cinco
-(2021–2025)**, con su `colegios_y_cierres`, y el primer aviso lo dice: si la pregunta es por la evolución larga, pide
+(2022–2026)**, con su `colegios_y_cierres`, y el primer aviso lo dice: si la pregunta es por la evolución larga, pide
 `desde=2004` y dilo en la respuesta.
 
 - **`colegios_por_anio`**: cuántos colegios tienen matrícula cada año, por dependencia. **`aperturas_y_cierres`**:
@@ -99,17 +99,17 @@ una región o Chile, en 2015–2019 y 2022–2025.
 ## La matrícula futura
 
 Para «¿cuánto será la matrícula de 1° básico en 2035?» o «¿cómo cambia la media en 5, 10, 15, 20 y 25 años?»:
-`proyeccion_matricula`. Es **solo del país**. Sin años trae los horizontes de 5, 10, 15, 20 y 25 años (2030–2050,
-cada cinco); para cada año, `desde` y `hasta` (todos: `desde=2026`).
+`proyeccion_matricula`. Es **solo del país**. Sin años trae 2030, 2035, 2040, 2045 y 2050; para cada año, `desde` y
+`hasta` (todos: `desde=2027`; 2026 es el año observado). Para «en N años», cuenta desde 2026 y pide esos años.
 
 - **Es una estimación, no un pronóstico.** Población del INE (base Censo 2024) con la edad de cada grado, por la
-  cobertura de ese grado en 2025. Dilo así, con los supuestos: fecundidad, mortalidad y migración del INE, y que la
+  cobertura de ese grado en 2026, el último año observado. Dilo así, con los supuestos: fecundidad, mortalidad y migración del INE, y que la
   cobertura no cambie.
 - **Di desde qué año depende de niños que no han nacido** (`grados_por_nacer`; en 1° básico, desde 2032). Antes de eso,
   la mayor fuente de error es la migración.
 - **Da la banda** (`bajo`–`alto`) y redondea a miles. La banda cubre cambios de cobertura como los de 2022–2025, no
   un error de la proyección del INE.
-- **Usa `cambio_desde_2025`**, que ya viene calculado, para los horizontes. No dividas a mano.
+- **Usa `cambio_desde_base`** (desde el año de `anio_base`), que ya viene calculado. No dividas a mano.
 - **Por región, comuna o colegio no hay**, y no se arma repartiendo la cifra del país: dilo y ofrece la de Chile o la
   serie observada del territorio (`panorama_region`, `panorama_comuna`).
 - **No expliques por qué baja la natalidad.** El saber no lo mide.

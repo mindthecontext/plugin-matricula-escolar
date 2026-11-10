@@ -24,7 +24,7 @@ saber. El valor está en la serie ordenada y en lo que no ve desde dentro, no en
 
 - **El nombre del sostenedor no está.** Sólo su RUT. No lo completes con conocimiento general aunque lo sepas.
 - **El RUT viene en blanco** cuando el sostenedor no es persona jurídica, y **no existe antes de 2024** para los
-  colegios que no están en los Directorios 2024–2025. Una red puede verse incompleta hacia atrás por eso: dilo.
+  colegios que no están en los Directorios 2024–2026. Una red puede verse incompleta hacia atrás por eso: dilo.
 - **Una red puede repartirse en varios RUT.** En Maipú, la Escuela Hermanos Carrera y el Colegio Hermanos Carrera de
   Chile (básica y media) tienen RUT distintos, y `colegios_del_sostenedor` no los une. Si la red parece incompleta,
   dilo: puede tener otro RUT, y el saber no lo sabe. Pregúntale a quien consulta si hay otros colegios.

@@ -16,7 +16,7 @@ memorizado envejece mal.
 
 ## Lo que este saber responde
 
-Qué pasa con los alumnos de cada colegio de Chile entre 2004 y 2025, y cómo les va al egresar, desde los registros
+Qué pasa con los alumnos de cada colegio de Chile entre 2004 y 2026, y cómo les va al egresar, desde los registros
 públicos del Mineduc y del DEMRE:
 
 - **Un colegio**: cuántos alumnos tiene por grado y año, qué proporción son prioritarios en cada nivel (desde 2016),
@@ -106,7 +106,7 @@ Antes de interpretar, `obtener_criterios()`; si una pregunta toca una frontera, 
 Para leer bien cada tipo de pregunta hay una skill: leer-un-colegio, leer-un-territorio, leer-una-red,
 leer-un-mercado y leer-los-resultados.
 
-Una ficha con muchos colegios y toda la serie 2004–2025 es pesada: si basta un año, pide `desde` y `hasta` iguales. Los panoramas y el cubo de egresados, sin años, traen los últimos cinco: para la serie completa, `desde=2004`.
+Una ficha con muchos colegios y toda la serie 2004–2026 es pesada: si basta un año, pide `desde` y `hasta` iguales. Los panoramas y el cubo de egresados, sin años, traen los últimos cinco: para la serie completa, `desde=2004`.
 
 ## Qué hay de nuevo, y qué versión responde
 
