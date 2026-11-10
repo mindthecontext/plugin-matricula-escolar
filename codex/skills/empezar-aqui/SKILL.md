@@ -28,7 +28,7 @@ públicos del Mineduc y del DEMRE:
   fueron absorbidos.
 - **Una región o Chile entero**: la matrícula exacta por dependencia, nivel y grado, la especial y los prioritarios.
 - **Una red**: todos los colegios de un mismo sostenedor, a partir de uno de ellos.
-- **La asistencia**, de un colegio, una comuna, una región o Chile, en 2018, 2019 y 2022–2024: la tasa de asistencia y
+- **La asistencia**, de un colegio, una comuna, una región o Chile, en 2015–2019 y 2022–2025: la tasa de asistencia y
   cuántos alumnos tienen inasistencia reiterada, grave o crítica, por nivel; en el territorio, también por dependencia,
   sexo y prioritario. Sin el particular pagado, que la base del Mineduc no incluye.
 - **Gráficos y reportes**: láminas de la matrícula, el ingreso a la educación superior, el tramo alto o el balance de la
@@ -65,7 +65,7 @@ Y el resto de lo que **no** trae:
 - **por qué** un colegio gana o pierde alumnos (la dinámica por colegio todavía no está compilada);
 - matrícula por **género**, postulación SAE, valor agregado;
 - el **nombre del sostenedor**: sólo su RUT;
-- **asistencia del particular pagado y de adultos**: la asistencia (`asistencia`, 2018, 2019 y 2022–2024) no los trae;
+- **asistencia del particular pagado y de adultos**: la asistencia (`asistencia`, 2015–2019 y 2022–2025) no los trae;
 - **proyecciones por colegio, comuna o región**: no las hay. Para Chile sí hay una estimación de la matrícula hasta
   2050 (`proyeccion_matricula`), hecha con la proyección de población del INE: se presenta como estimación con
   supuestos, nunca como pronóstico;

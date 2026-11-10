@@ -70,7 +70,7 @@ Nunca digas que un colegio «pierde frente a» otro ni que es «el preferido».
 
 ## La asistencia del colegio
 
-Para «¿cuánto faltan en el Liceo X?»: `asistencia` con su `rbd`, en 2018, 2019 y 2022–2024. Trae, por nivel, la tasa
+Para «¿cuánto faltan en el Liceo X?»: `asistencia` con su `rbd`, en 2015–2019 y 2022–2025. Trae, por nivel, la tasa
 y los alumnos en cada categoría del Mineduc (esperada, reiterada, grave y crítica), con k = 5, y su comuna como
 `contexto`. Léela como dice la sección «La asistencia» de leer-un-territorio, y además:
 

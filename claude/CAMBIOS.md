@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.22.0 · 2026-11-10
+
+La asistencia trae ahora nueve años: de 2015 a 2019 y de 2022 a 2025. Usa los archivos que el Mineduc volvió a publicar en febrero de 2026, en los que cada alumno queda en su último colegio del año y los días de suspensión de clases cuentan como no trabajados; las cifras nacionales casi no cambian, pero las de algunas comunas y colegios sí. Para comparar con antes de la pandemia, la respuesta usa 2015–2018 como rango, porque la asistencia venía subiendo esos años. En 2015 no hay corte por alumnos prioritarios.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1+asistencia@2` · antes `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1+asistencia@1`
+
 ## v0.21.1 · 2026-11-09
 
 La asistencia dice mejor lo que trae: qué es el sexo y qué es un alumno prioritario en los cortes, que los no prioritarios van sin el particular pagado, por qué la cobertura puede pasar del 100 % y sobre qué matrícula se calcula (ahora con y sin particular pagado), la inasistencia grave oficial del Mineduc (33 % en 2023 y 27,7 % en 2024) para compararla, y que un colegio particular pagado no tiene asistencia. Las respuestas pesan menos.

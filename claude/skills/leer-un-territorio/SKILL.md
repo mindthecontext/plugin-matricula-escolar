@@ -78,7 +78,7 @@ Junto a esas cifras se dice:
 ## La asistencia
 
 Para «¿cuánto faltan los alumnos?» o «¿cuántos tienen inasistencia grave?»: `asistencia`, de un colegio, una comuna,
-una región o Chile, en 2018, 2019 y 2022–2024.
+una región o Chile, en 2015–2019 y 2022–2025.
 
 - **Di la tasa y las categorías como vienen.** La tasa acumulada es días asistidos sobre días trabajados. Las categorías
   son las del Mineduc: esperada (90 % o más), reiterada (85 a 90 %), grave (50 a 85 %) y crítica (menos de 50 %).
@@ -86,8 +86,11 @@ una región o Chile, en 2018, 2019 y 2022–2024.
 - **Sin particular pagado y sin adultos.** La base del Mineduc no trae el particular pagado: dilo siempre, y con más
   fuerza si el primer aviso dice que en ese territorio pesa. `cobertura` dice qué parte de la matrícula cubre.
 - **2020 y 2021 no existen, y 2019 coincide con el estallido social.** Para hablar del efecto de la pandemia, compara
-  con 2018.
-- **Cortes:** en territorio, `corte` = dependencia, sexo o prioritario. En el colegio, ninguno: va por nivel, con
+  con 2015–2018 como rango, no con un solo año: la asistencia venía subiendo en esos años.
+- **Son los archivos que el Mineduc re-publicó en febrero de 2026:** cada alumno queda en su último colegio del año. En
+  2015 no hay corte por prioritario.
+- **Cortes:** en territorio, `corte` = dependencia, sexo o prioritario. Con corte y sin años, trae los últimos cinco;
+  para la línea base, pide `desde=2015`. En el colegio, ninguno: va por nivel, con
   k = 5, y con su comuna como contexto.
 - **La cifra oficial difiere un poco en las categorías** (el Mineduc redondea la tasa de cada alumno y cuenta adultos).
   Si la citas, di que es otra medición.
