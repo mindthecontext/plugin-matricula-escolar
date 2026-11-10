@@ -1,6 +1,6 @@
 ---
 name: leer-un-colegio
-description: Responde sobre la matrícula y los movimientos de alumnos de uno o varios colegios chilenos — «¿cuántos alumnos tiene el Liceo X?», «¿cómo ha evolucionado su matrícula?», «¿cuántos prioritarios tiene?», «¿cuántos se fueron este año y adónde?», «¿de qué colegios llegan sus alumnos de 1° medio?». Para los resultados del colegio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los colegios de un sostenedor, leer-una-red; para la competencia entre los colegios de una comuna, leer-un-mercado.
+description: Responde sobre la matrícula y los movimientos de alumnos de uno o varios colegios chilenos — «¿cuántos alumnos tiene el Liceo X?», «¿cómo ha evolucionado su matrícula?», «¿cuántos prioritarios tiene?», «¿cuántos se fueron este año y adónde?», «¿de qué colegios llegan sus alumnos de 1° medio?», «¿cuánto faltan a clases en el Liceo X?». Para los resultados del colegio (NEM, PAES, ingreso a la educación superior), leer-los-resultados; para los colegios de un sostenedor, leer-una-red; para la competencia entre los colegios de una comuna, leer-un-mercado.
 ---
 
 # Leer un colegio
@@ -68,6 +68,19 @@ Un corredor describe un movimiento, no una preferencia. Antes de describirlo, re
 - **La primera ventana, 2005–2010, tiene seis años**; las demás, cinco.
 
 Nunca digas que un colegio «pierde frente a» otro ni que es «el preferido».
+
+## La asistencia del colegio
+
+Para «¿cuánto faltan en el Liceo X?»: `asistencia` con su `rbd`, en 2018, 2019 y 2022–2024. Trae, por nivel, la tasa
+y los alumnos en cada categoría del Mineduc (esperada, reiterada, grave y crítica), con k = 5, y su comuna como
+`contexto`. Léela como dice la sección «La asistencia» de leer-un-territorio, y además:
+
+- **«Menos de 5» es de 1 a 4, no cero, y no lo despejes**, aunque restando las otras categorías se pueda calcular.
+- **Un particular pagado no tiene asistencia:** la base del Mineduc no lo incluye. Dilo y no la estimes, tampoco con
+  la de la comuna.
+- **No expliques una cifra baja** con tomas, paros o suspensiones que conozcas de otra fuente: la base no registra por
+  qué faltaron los alumnos.
+- **No ordenes colegios por asistencia**, tampoco si te piden comparar varios: describe cada uno con su comuna.
 
 ## Lo que no está
 

@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.21.1 · 2026-11-09
+
+La asistencia dice mejor lo que trae: qué es el sexo y qué es un alumno prioritario en los cortes, que los no prioritarios van sin el particular pagado, por qué la cobertura puede pasar del 100 % y sobre qué matrícula se calcula (ahora con y sin particular pagado), la inasistencia grave oficial del Mineduc (33 % en 2023 y 27,7 % en 2024) para compararla, y que un colegio particular pagado no tiene asistencia. Las respuestas pesan menos.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@3+directorio@2+agregados@2+resultados@10+cierres@1+proyecciones@1+asistencia@1`
+
 ## v0.21.0 · 2026-11-09
 
 Nueva herramienta asistencia: la asistencia y el ausentismo crónico de un colegio, una comuna, una región o Chile, en 2018, 2019 y 2022 a 2024 (2020 y 2021 no existen). Trae la tasa de asistencia y cuántos alumnos tienen asistencia esperada o inasistencia reiterada, grave o crítica, con las categorías del Mineduc, por nivel; en el territorio, también por dependencia, sexo y prioritario, y qué parte de la matrícula cubre. No incluye el particular pagado, que la base del Mineduc no trae, ni la educación de adultos, y no ordena colegios por asistencia.
