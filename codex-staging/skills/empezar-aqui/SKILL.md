@@ -31,6 +31,9 @@ públicos del Mineduc y del DEMRE:
 - **La asistencia**, de un colegio, una comuna, una región o Chile, en 2015–2019 y 2022–2025: la tasa de asistencia y
   cuántos alumnos tienen inasistencia reiterada, grave o crítica, por nivel; en el territorio, también por dependencia,
   sexo y prioritario. Sin el particular pagado, que la base del Mineduc no incluye.
+- **La radiografía de un colegio**: un diagnóstico frente a su comuna, que cruza matrícula, flujos, asistencia,
+  resultados y la trayectoria de sus egresados de 8°, con tres hallazgos y tres preguntas para el equipo (skill
+  radiografia-de-mi-colegio).
 - **Qué pasa con quienes salen de 8° básico**, de un colegio, una comuna, una región o Chile (cohortes 2004–2017):
   cuántos terminan la media como jóvenes, cuántos como adultos y cuántos llegan a la educación superior; en el
   territorio, también rural y urbano y escuelas con o sin media.

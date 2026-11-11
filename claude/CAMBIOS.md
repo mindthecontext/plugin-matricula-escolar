@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.26.0 · 2026-11-11
+
+La radiografía de un colegio. Una skill nueva, radiografia-de-mi-colegio, arma el diagnóstico de un colegio frente a su comuna para su director, su equipo o un consejo: cuántos son y hacia dónde va, quién llega y quién se va, cómo están sus alumnos (asistencia, resultados y, en las escuelas sin media, qué pasó con sus egresados de 8°) y qué dicen la comuna y el país sobre su futuro. Cierra con tres hallazgos y tres preguntas para el equipo, y describe sin explicar ni comparar con otros colegios. El marco lo sirve una herramienta nueva, guia_de_analisis. Los datos no cambian.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `guia_de_analisis`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `guia_de_analisis`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`, `radiografia-de-mi-colegio` · aparece `radiografia-de-mi-colegio`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@2`
+
 ## v0.25.0 · 2026-11-11
 
 Una escuela rural que termina en 8° básico ahora se compara con las de su mismo tipo. Lo que pasa después de 8° se puede pedir por zona y tipo de escuela a la vez (rural sin media, rural con media, urbana sin media, urbana con media), en la comuna, la región y el país. Y el contexto de cada colegio trae primero a los colegios de su misma zona y tipo, y después a los de su zona: antes, el país mezclaba escuelas rurales y urbanas sin media. Una escuela con pocos alumnos se compara con las de su comuna en la misma zona y del mismo tipo.
