@@ -63,6 +63,23 @@
     if (opt.src) el.insertAdjacentHTML("beforeend", `<div class="src">${opt.src}</div>`);
   }
   const ancho = (el) => Math.max(320, Math.min(960, el.clientWidth || 720));
+
+  // Cada lámina se dibuja al ancho de su contenedor y se VUELVE A DIBUJAR cuando ese ancho cambia (MEE-74). Antes
+  // se medía una sola vez: si la página se dibujaba en un panel angosto (un artifact que abre estrecho y después se
+  // ensancha), el gráfico quedaba para siempre en el modo celular, en un tercio de la tarjeta. Se redibuja sólo si
+  // el ancho útil cambia en 8 px o más, una vez por cuadro.
+  function responsiva(dibujar) {
+    return function (el, datos, opt) {
+      dibujar(el, datos, opt);
+      if (typeof ResizeObserver === "undefined") return;
+      let ultimo = ancho(el), cuadro = 0;
+      new ResizeObserver(() => {
+        if (Math.abs(ancho(el) - ultimo) < 8) return;
+        cancelAnimationFrame(cuadro);
+        cuadro = requestAnimationFrame(() => { ultimo = ancho(el); dibujar(el, datos, opt); });
+      }).observe(el);
+    };
+  }
   const base = (el, alto) => ({ width: ancho(el), height: alto, style: { fontSize: "13px", color: EJE, background: "transparent" } });
 
   // ── serie — una o varias series anuales (líneas con marcadores y nombre al final) ──────────────────────────
@@ -206,5 +223,5 @@
       <p class="versiones">${f.versiones || ""}${f.generado ? ` · generado el ${f.generado}` : ""}</p>`;
   }
 
-  window.Laminas = { serie, balance, barras, fuentes, DEP, FMT };
+  window.Laminas = { serie: responsiva(serie), balance: responsiva(balance), barras: responsiva(barras), fuentes, DEP, FMT };
 })();

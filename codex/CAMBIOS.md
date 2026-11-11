@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.23.1 · 2026-11-11
+
+Los gráficos de los reportes ocupan el ancho de la página. Antes medían el espacio una sola vez, al dibujarse: si el reporte se abría en un panel angosto, el gráfico quedaba en formato de celular, en un tercio de la tarjeta, aunque la página se ensanchara después. Ahora cada gráfico se vuelve a dibujar cuando cambia su espacio. Los datos no cambian.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3`
+
 ## v0.23.0 · 2026-11-10
 
 Llega la matrícula 2026, publicada por el Mineduc el 28 de octubre, con el Directorio 2026: el saber cubre ahora 2004–2026. Sin años, los panoramas traen 2022–2026; los colegios y la captación de una comuna van por defecto en 2026; los cierres usan el estado del Directorio 2026; y la última ventana de corredores pasa a 2021–2026. La matrícula futura se estima ahora con 2026 como año observado (2027–2050): 1° básico baja a unos 123 mil alumnos en 2035. En 2026 no hay prioritarios, porque la base SEP de ese año aún no se publica: el saber lo dice en vez de mostrar cero. Los resultados siguen con la promoción 2025 y la asistencia con 2025, los últimos publicados.
