@@ -100,7 +100,8 @@ una región o Chile, en 2015–2019 y 2022–2025.
 ## Después de 8° básico
 
 Para «¿cuántos de los que salen de 8° terminan la media o llegan a la educación superior?» en una comuna, una región o
-Chile: `despues_de_octavo`. Sin corte trae rural y urbano; con `corte=tipo_escuela`, los colegios con y sin media. Se
+Chile: `despues_de_octavo`. Sin corte trae rural y urbano; con `corte=tipo_escuela`, los colegios con y sin media; con `corte=zona_tipo_escuela`, los
+dos juntos (rural sin media, por ejemplo). Se
 lee como dice «Después de 8° básico» en leer-los-resultados.
 
 ## La matrícula futura

@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.25.0 · 2026-11-11
+
+Una escuela rural que termina en 8° básico ahora se compara con las de su mismo tipo. Lo que pasa después de 8° se puede pedir por zona y tipo de escuela a la vez (rural sin media, rural con media, urbana sin media, urbana con media), en la comuna, la región y el país. Y el contexto de cada colegio trae primero a los colegios de su misma zona y tipo, y después a los de su zona: antes, el país mezclaba escuelas rurales y urbanas sin media. Una escuela con pocos alumnos se compara con las de su comuna en la misma zona y del mismo tipo.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@2` · antes `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@1`
+
 ## v0.24.1 · 2026-11-11
 
 Lo que pasa después de 8° básico se lee con menos cuentas a mano. Cada cifra trae ya sumados cuántos terminaron la media (como jóvenes o como adultos) y cuántos quedaron sin licencia a los ocho años, que es lo más cercano a «cuántos desertaron» que estos datos permiten decir, como un techo y no como deserción. Y el asistente ya no estima márgenes de error por su cuenta, no explica las tendencias con lo que los datos no traen ni afirma la composición de un grupo sin un corte que la muestre. Los datos no cambian.

@@ -109,8 +109,9 @@ matricularon en la educación superior.
   comuna no se lee como distinta.
 - **Describe las tendencias sin explicarlas.** Si la licencia de adultos baja en las cohortes recientes, dilo junto con
   la subida de la licencia como joven, sin «es decir»: la herramienta no dice por qué.
-- **No afirmes la composición de un grupo sin un corte que la muestre**: no hay corte cruzado de zona y tipo de
-  escuela, así que no digas cuántas escuelas sin media son rurales.
+- **No afirmes la composición de un grupo sin un corte que la muestre.** Para comparar una escuela rural que termina
+  en 8° con las de su mismo tipo, usa `corte=zona_tipo_escuela` en el territorio; en el colegio, el `contexto` ya trae
+  primero los de su misma zona y tipo (`comuna_rural_hasta_8`, por ejemplo).
 - **El aviso del SIES sobre el ingreso a la superior** es de los egresados de 4° medio (`resultados_colegio` y
   `resultados_territorio`), no de esta herramienta.
 - **No ordenes colegios ni califiques**: la trayectoria depende de quiénes son los alumnos y de la oferta de la zona.
