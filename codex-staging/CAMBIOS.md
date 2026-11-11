@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.26.1 · 2026-11-11
+
+Pedir la guía de la radiografía ya no usa créditos, igual que los criterios de lectura: no trae datos y el saber pide llamarla antes que las demás. Además, el servicio queda preparado para medir créditos también en producción. Los datos y las respuestas no cambian.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `guia_de_analisis`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`, `radiografia-de-mi-colegio`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@2`
+
 ## v0.26.0 · 2026-11-11
 
 La radiografía de un colegio. Una skill nueva, radiografia-de-mi-colegio, arma el diagnóstico de un colegio frente a su comuna para su director, su equipo o un consejo: cuántos son y hacia dónde va, quién llega y quién se va, cómo están sus alumnos (asistencia, resultados y, en las escuelas sin media, qué pasó con sus egresados de 8°) y qué dicen la comuna y el país sobre su futuro. Cierra con tres hallazgos y tres preguntas para el equipo, y describe sin explicar ni comparar con otros colegios. El marco lo sirve una herramienta nueva, guia_de_analisis. Los datos no cambian.
