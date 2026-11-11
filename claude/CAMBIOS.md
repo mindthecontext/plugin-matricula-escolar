@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.24.0 · 2026-11-11
+
+Qué pasa con quienes salen de 8° básico. Una herramienta nueva, despues_de_octavo, sigue a los alumnos de cada colegio, comuna, región y del país que salieron de 8° entre 2004 y 2017, y dice cuántos obtuvieron la licencia de media como jóvenes, cuántos en la educación de adultos y cuántos se matricularon en la educación superior y en una universidad, con el mismo horizonte para todos (ocho años para la licencia, nueve para la superior). Va en tres ventanas de cohortes, con cortes rural y urbano, por dependencia y por escuelas con y sin media. Un colegio muestra sus cifras con 30 alumnos o más en la ventana; si no, se compara con su comuna en la misma zona. En las escuelas que terminan en 8°, el paso a 1° medio deja de verse sólo como un traslado: ahora se sabe cómo les fue.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `despues_de_octavo`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@1` · antes `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3`
+
 ## v0.23.1 · 2026-11-11
 
 Los gráficos de los reportes ocupan el ancho de la página. Antes medían el espacio una sola vez, al dibujarse: si el reporte se abría en un panel angosto, el gráfico quedaba en formato de celular, en un tercio de la tarjeta, aunque la página se ensanchara después. Ahora cada gráfico se vuelve a dibujar cuando cambia su espacio. Los datos no cambian.

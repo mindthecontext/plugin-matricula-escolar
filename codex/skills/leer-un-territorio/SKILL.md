@@ -97,6 +97,12 @@ una región o Chile, en 2015–2019 y 2022–2025.
   Si la citas, di que es otra medición.
 - **No expliques ni ordenes.** La base no dice por qué falta un alumno, y ningún colegio es «el que más falta».
 
+## Después de 8° básico
+
+Para «¿cuántos de los que salen de 8° terminan la media o llegan a la educación superior?» en una comuna, una región o
+Chile: `despues_de_octavo`. Sin corte trae rural y urbano; con `corte=tipo_escuela`, los colegios con y sin media. Se
+lee como dice «Después de 8° básico» en leer-los-resultados.
+
 ## La matrícula futura
 
 Para «¿cuánto será la matrícula de 1° básico en 2035?» o «¿cómo cambia la media en 5, 10, 15, 20 y 25 años?»:

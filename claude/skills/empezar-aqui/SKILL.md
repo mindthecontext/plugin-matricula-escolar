@@ -30,6 +30,9 @@ públicos del Mineduc y del DEMRE:
 - **La asistencia**, de un colegio, una comuna, una región o Chile, en 2015–2019 y 2022–2025: la tasa de asistencia y
   cuántos alumnos tienen inasistencia reiterada, grave o crítica, por nivel; en el territorio, también por dependencia,
   sexo y prioritario. Sin el particular pagado, que la base del Mineduc no incluye.
+- **Qué pasa con quienes salen de 8° básico**, de un colegio, una comuna, una región o Chile (cohortes 2004–2017):
+  cuántos terminan la media como jóvenes, cuántos como adultos y cuántos llegan a la educación superior; en el
+  territorio, también rural y urbano y escuelas con o sin media.
 - **Gráficos y reportes**: láminas de la matrícula, el ingreso a la educación superior, el tramo alto o el balance de la
   matrícula, legibles para daltónicos y con las fuentes y el método al pie (skill graficar-y-reportar).
 - **Los resultados de cada promoción**, de un colegio, una comuna, una región o Chile: el NEM (desde la promoción

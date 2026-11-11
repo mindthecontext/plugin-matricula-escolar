@@ -1,6 +1,6 @@
 ---
 name: leer-los-resultados
-description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿qué carreras eligen?», «¿se concentran en pocas carreras?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Y el ingreso cruzado: «¿entran más las mujeres o los hombres?», «¿cómo les va a los prioritarios?», «¿y a los mejores de cada colegio?», «¿cuántos se van a estudiar a otra región?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior, a qué institución y a qué carrera. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
+description: Responde sobre los resultados de los egresados de un colegio, una comuna, una región o Chile — «¿cómo le fue al Liceo X en la PAES?», «¿cuál es el NEM de la promoción 2025?», «¿cuántos egresados entraron a la educación superior?», «¿a qué universidades entran los alumnos de mi colegio?», «¿qué carreras eligen?», «¿se concentran en pocas carreras?», «¿cómo se compara mi colegio con la comuna?». También «¿dónde están los estudiantes con mejores puntajes?», «¿cuántos de mis alumnos quedan en el 10 % superior?», «¿cuántos prioritarios llegan a los mejores puntajes?», «¿qué liceos públicos llevan prioritarios a puntajes altos?». Y el ingreso cruzado: «¿entran más las mujeres o los hombres?», «¿cómo les va a los prioritarios?», «¿y a los mejores de cada colegio?», «¿cuántos se van a estudiar a otra región?». Y lo que pasa con quienes salen de 8° básico: «¿los que egresaron de la escuela terminaron la media?», «¿cuántos la terminaron en adultos?», «¿cuántos llegaron a la educación superior?». Cubre NEM, PAES (Competencia Lectora y Matemática 1), el tramo alto de la PAES, ingreso a la educación superior, a qué institución y a qué carrera. NO ordena colegios por resultado. Para la matrícula, leer-un-colegio o leer-un-territorio.
 ---
 
 # Leer los resultados
@@ -84,6 +84,26 @@ respuesta trae sólo el cubo, y pesa poco.
   La región del colegio es la actual; la de la sede, la que registró el SIES ese año: antes de 2018 una sede que hoy
   está en Ñuble figura en el Biobío.
 - **Para graficarlo**, la skill graficar-y-reportar: una `serie` por cruce, con `fmt: "pct"`.
+
+## Después de 8° básico
+
+Para «¿qué pasó con los que egresaron de la escuela?», sobre todo en las escuelas que terminan en 8°:
+`despues_de_octavo`, de un colegio, una comuna, una región o Chile. Sigue a los alumnos que salen de 8° (cohortes
+2004–2017, en tres ventanas) y dice si obtuvieron la licencia de media como jóvenes o como adultos, y si se
+matricularon en la educación superior.
+
+- **Terminar la media es `lic_joven` más `lic_adulto`.** Di las dos rutas por separado y la suma: la de adultos es
+  grande (en el país, entre el 10 % y el 13 % según la ventana), y sin ella se subestima cuántos terminan.
+- **Los cinco desenlaces suman el 100 %**; la licencia a tiempo, la superior y la universidad van aparte. `sin_registro`
+  no es deserción: pudo emigrar o fallecer. La superior es haberse matriculado, no haberse titulado.
+- **El horizonte es fijo** (licencia hasta 8 años después, superior hasta 9): por eso las ventanas se comparan entre sí.
+  Di de qué ventana es cada cifra; la de 2014–2017 tiene cuatro cohortes.
+- **El colegio, sólo con 30 alumnos o más en la ventana.** Si viene `publicable: false`, di su número de alumnos y usa el
+  `comparador` (la comuna en la misma zona) diciendo que es la comuna, no el colegio. Con `contexto`, compara con la
+  comuna, la región y el país en la misma zona.
+- **En una escuela sin media, el paso a 1° medio no es un traslado**: todos sus alumnos se van a otro colegio. Si la
+  pregunta viene de los flujos, ésta es la herramienta que dice cómo les fue.
+- **No ordenes colegios ni califiques**: la trayectoria depende de quiénes son los alumnos y de la oferta de la zona.
 
 ## Lo que se dice junto a la cifra
 

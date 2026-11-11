@@ -61,7 +61,8 @@ Un corredor describe un movimiento, no una preferencia. Antes de describirlo, re
 
 - **`nota_s5`**: el otro colegio cerró o fue absorbido, y el traslado fue institucional. Dilo junto a la cifra.
 - **El nivel siguiente**: muchos traslados son el paso de 8° básico a 1° medio porque el colegio de origen no tiene
-  media.
+  media. Para saber cómo les fue después (licencia de media, como joven o adulto, y educación superior),
+  `despues_de_octavo` con el `rbd`; se lee como dice «Después de 8° básico» en leer-los-resultados.
 - **`muestra_chica`** (menos de 30 en la ventana): se cita con su cifra, «8 alumnos», sin leerlo como tendencia.
 - **`cobertura`**: qué parte de los traslados explican los pares con nombre. Que un par no aparezca no significa que
   no haya movimiento: los de 1 a 4 alumnos no se publican.
