@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.24.1 · 2026-11-11
+
+Lo que pasa después de 8° básico se lee con menos cuentas a mano. Cada cifra trae ya sumados cuántos terminaron la media (como jóvenes o como adultos) y cuántos quedaron sin licencia a los ocho años, que es lo más cercano a «cuántos desertaron» que estos datos permiten decir, como un techo y no como deserción. Y el asistente ya no estima márgenes de error por su cuenta, no explica las tendencias con lo que los datos no traen ni afirma la composición de un grupo sin un corte que la muestre. Los datos no cambian.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@1`
+
 ## v0.24.0 · 2026-11-11
 
 Qué pasa con quienes salen de 8° básico. Una herramienta nueva, despues_de_octavo, sigue a los alumnos de cada colegio, comuna, región y del país que salieron de 8° entre 2004 y 2017, y dice cuántos obtuvieron la licencia de media como jóvenes, cuántos en la educación de adultos y cuántos se matricularon en la educación superior y en una universidad, con el mismo horizonte para todos (ocho años para la licencia, nueve para la superior). Va en tres ventanas de cohortes, con cortes rural y urbano, por dependencia y por escuelas con y sin media. Un colegio muestra sus cifras con 30 alumnos o más en la ventana; si no, se compara con su comuna en la misma zona. En las escuelas que terminan en 8°, el paso a 1° medio deja de verse sólo como un traslado: ahora se sabe cómo les fue.

@@ -92,8 +92,11 @@ Para «¿qué pasó con los que egresaron de la escuela?», sobre todo en las es
 2004–2017, en tres ventanas) y dice si obtuvieron la licencia de media como jóvenes o como adultos, y si se
 matricularon en la educación superior.
 
-- **Terminar la media es `lic_joven` más `lic_adulto`.** Di las dos rutas por separado y la suma: la de adultos es
-  grande (en el país, entre el 10 % y el 13 % según la ventana), y sin ella se subestima cuántos terminan.
+- **Terminar la media es `termina_media`** (licencia como joven o como adulto), que viene sumado: no sumes a mano. Di
+  también las dos rutas por separado: la de adultos es grande (en el país, entre el 10 % y el 13 % según la ventana), y
+  sin ella se subestima cuántos terminan.
+- **A «¿cuántos desertaron?» responde con `sin_licencia`**, como un techo y no como deserción: la base no mide
+  deserción, e incluye a quien emigró, falleció o validó estudios por exámenes libres.
 - **Los cinco desenlaces suman el 100 %**; la licencia a tiempo, la superior y la universidad van aparte. `sin_registro`
   no es deserción: pudo emigrar o fallecer. La superior es haberse matriculado, no haberse titulado.
 - **El horizonte es fijo** (licencia hasta 8 años después, superior hasta 9): por eso las ventanas se comparan entre sí.
@@ -103,6 +106,14 @@ matricularon en la educación superior.
   comuna, la región y el país en la misma zona.
 - **En una escuela sin media, el paso a 1° medio no es un traslado**: todos sus alumnos se van a otro colegio. Si la
   pregunta viene de los flujos, ésta es la herramienta que dice cómo les fue.
+- **No estimes márgenes de error** por tu cuenta: con menos de 100 alumnos, una diferencia de pocos puntos con la
+  comuna no se lee como distinta.
+- **Describe las tendencias sin explicarlas.** Si la licencia de adultos baja en las cohortes recientes, dilo junto con
+  la subida de la licencia como joven, sin «es decir»: la herramienta no dice por qué.
+- **No afirmes la composición de un grupo sin un corte que la muestre**: no hay corte cruzado de zona y tipo de
+  escuela, así que no digas cuántas escuelas sin media son rurales.
+- **El aviso del SIES sobre el ingreso a la superior** es de los egresados de 4° medio (`resultados_colegio` y
+  `resultados_territorio`), no de esta herramienta.
 - **No ordenes colegios ni califiques**: la trayectoria depende de quiénes son los alumnos y de la oferta de la zona.
 
 ## Lo que se dice junto a la cifra
