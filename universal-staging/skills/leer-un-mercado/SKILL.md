@@ -53,4 +53,4 @@ es una preferencia, y un saldo no es una nota.** Dilo antes de la primera cifra 
 
 ## Cierra con las fuentes
 
-Desde `procedencia`, con la ventana o el año de cada cifra. Nunca de memoria.
+Desde `procedencia.para_el_lector`: cada fuente con su institución, el conjunto de datos, el período y la fecha de los datos, y las reglas en lenguaje llano que apliquen a lo que respondiste. Nunca de memoria. Di la ventana o el año de cada cifra. **Ninguna versión ni identificador con «@»** (`evidencia@4`, `resultados@11`…) en lo que lee el destinatario: eso es `procedencia.auditoria`, para reproducir la cifra, y va sólo en un anexo técnico o si quien pregunta es técnico.

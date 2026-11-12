@@ -34,7 +34,7 @@ Cada hallazgo es una tarjeta: una frase con la cifra principal, la lámina y lo 
 ## Las láminas
 
 Las tres llevan siempre `opt.t` (título: el QUÉ, frase nominal breve), `opt.s` (subtítulo: unidad, universo y años) y
-`opt.src` (fuente: «Fuente: …», armada desde `procedencia`).
+`opt.src` (fuente: «Fuente: …», armada desde `procedencia.para_el_lector.fuentes`: institución y conjunto de datos, sin versiones).
 
 | Tipo | Para qué | `datos` |
 |---|---|---|
@@ -63,18 +63,18 @@ lámina, respeta eso.
 
 ## El bloque «Fuentes y método»
 
-Va siempre, al final del reporte. Se construye desde `procedencia` y `obtener_criterios`, nunca de memoria:
+Va siempre, al final del reporte. Se construye desde `procedencia.para_el_lector` y `obtener_criterios`, nunca de memoria, y lo lee alguien de fuera del laboratorio: **ningún identificador con «@»** en el texto visible.
 
 | Campo | De dónde sale |
 |---|---|
-| `fuentes` | `procedencia.fuente_original`, separada en sus bases, cada una con sus años: Matrícula Escolar (Mineduc), NEM y Percentil Jóvenes, Puntajes PAES (DEMRE), Matrícula de Educación Superior (SIES), Alumnos SEP. Sólo las que usa el reporte. |
-| `universo` | `procedencia.universo`. Si hay resultados, agrega que son de los jóvenes (sin adultos). |
+| `fuentes` | `procedencia.para_el_lector.fuentes`: institución, conjunto de datos, período, fecha de los datos y enlace. Sólo las de los bloques que usa el reporte (`por_bloque` en los resultados). |
+| `universo` | `universo` de la respuesta, en palabras. Si hay resultados, agrega que son de los jóvenes (sin adultos). |
 | `medidas` | Una línea por cada medida graficada, con la definición de su criterio (`obtener_criterios`): matrícula regular, ingreso directo, 10 % superior, balance… |
-| `divulgacion` | Los totales de territorio son exactos; en un colegio, una cifra de 1 a 4 es «menos de 5» y no se despeja (divulgacion@3). |
+| `divulgacion` | `procedencia.para_el_lector.reglas_en_lenguaje_llano`: los totales de territorio son exactos; en un colegio, una cifra de 1 a 4 es «menos de 5», que no es cero, y no se despeja. |
 | `quiebres` | Los que tocan los años del reporte: el hueco de 2008 (faltan 31 colegios), la PAES desde la promoción 2022 (la PSU no es comparable), la región actual de cada comuna para toda la serie, la pandemia en 2020–2021 si hay ingreso. |
 | `cobertura` | Sin educación de adultos ni jardines de JUNJI e Integra. |
 | `no_derivable` | Lo que el lector podría creer que el gráfico dice y no dice: por qué cambia o cierra un colegio, la nacionalidad, si los que entran a la educación superior siguen o se titulan, la calidad de un colegio. |
-| `versiones` | Las versiones de `procedencia` (evidencia, agregados, resultados, cierres) y el nombre del saber. |
+| `reproducibilidad` | `procedencia.auditoria` (las versiones: evidencia, agregados, resultados, cierres) en un pie plegable (`<details>`) o en un comentario HTML, nunca en el texto visible. |
 
 ## Reglas
 
@@ -95,4 +95,4 @@ Va siempre, al final del reporte. Se construye desde `procedencia` y `obtener_cr
 
 ## Cierra con las fuentes
 
-La página cierra con el bloque de fuentes y método. Si además respondes en texto, cierra con la misma procedencia.
+La página cierra con el bloque de fuentes y método. Si además respondes en texto, cierra con las mismas fuentes, desde `procedencia.para_el_lector`.

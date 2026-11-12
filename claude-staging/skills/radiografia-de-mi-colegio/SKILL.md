@@ -30,4 +30,4 @@ hallazgos y tres preguntas para su equipo. Describe; la causa la pone quien cono
 - **Lo que falta se dice**, con su razón, y no se rellena con la comuna.
 - **En una escuela sin media, el paso a 1° medio no es fuga:** dilo, y cuenta qué pasó con esos alumnos con
   `despues_de_octavo`.
-- **«Menos de 5» no es cero ni se despeja.** Las fuentes salen de `procedencia`, no de memoria.
+- **«Menos de 5» no es cero ni se despeja.** Las fuentes salen de `procedencia.para_el_lector` de cada herramienta, no de memoria, y sin versiones con «@»: el consejo no las entiende.

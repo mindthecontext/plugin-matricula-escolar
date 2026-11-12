@@ -47,7 +47,7 @@ Si la persona da el RBD, úsalo directo. Si menciona la comuna, pásala en `comu
   siguiente. Si la pregunta es si entraron a la educación superior y adónde, eso está en `resultados_colegio`
   (skill leer-los-resultados).
 - **«otros» junta las categorías de 1 a 4 alumnos**, nunca es un colegio. Si viene como «menos de 5», son entre 1 y 4
-  alumnos, no cero. Toda categoría de 5 o más va con su nombre (divulgacion@3).
+  alumnos, no cero. Toda categoría de 5 o más va con su nombre.
 - **Un «menos de 5» no se despeja.** Un total publicado puede dejar calcular un grado de la especial, un «otros» o
   los no prioritarios de un nivel, restando del total o multiplicando un porcentaje por `n`. Aunque la cuenta sea
   posible, esa cifra no se da. Si el usuario pide la cuenta, explica que el saber no publica grupos de 1 a 4.
@@ -90,4 +90,4 @@ técnico-profesional. Lo que llegue como `no_derivable` no se estima.
 
 ## Cierra con las fuentes
 
-Desde `procedencia`: fuente original, años, versión de la evidencia y sus consideraciones. Nunca de memoria.
+Desde `procedencia.para_el_lector`: cada fuente con su institución, el conjunto de datos, el período y la fecha de los datos, y las reglas en lenguaje llano que apliquen a lo que respondiste. Nunca de memoria. **Ninguna versión ni identificador con «@»** (`evidencia@4`, `resultados@11`…) en lo que lee el destinatario: eso es `procedencia.auditoria`, para reproducir la cifra, y va sólo en un anexo técnico o si quien pregunta es técnico.

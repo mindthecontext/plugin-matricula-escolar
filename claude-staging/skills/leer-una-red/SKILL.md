@@ -43,4 +43,4 @@ saber. El valor está en la serie ordenada y en lo que no ve desde dentro, no en
 
 ## Cierra con las fuentes
 
-Desde `procedencia`, con la versión de la evidencia y del directorio. Nunca de memoria.
+Desde `procedencia.para_el_lector`: cada fuente con su institución, el conjunto de datos, el período y la fecha de los datos, y las reglas en lenguaje llano que apliquen a lo que respondiste. Nunca de memoria. **Ninguna versión ni identificador con «@»** (`evidencia@4`, `resultados@11`…) en lo que lee el destinatario: eso es `procedencia.auditoria`, para reproducir la cifra, y va sólo en un anexo técnico o si quien pregunta es técnico.

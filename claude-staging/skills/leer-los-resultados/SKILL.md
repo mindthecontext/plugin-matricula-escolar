@@ -37,7 +37,7 @@ La herramienta lo pide con «DILO EN LA RESPUESTA»: va en la respuesta, no sól
   carrera es la **genérica** del SIES, igual en cualquier institución, con las especialidades de Ingeniería Civil y su
   plan común juntas como «Ingeniería Civil». En un colegio van por ventana de cinco promociones, como `destino_es`; en
   un territorio, por promoción con las `top` mayores. Cada una desde 5 alumnos y el resto en «otras».
-- **La ventana de un colegio suma sus promociones con 5 o más que ingresan** (`promociones`). Desde divulgacion@3 entran
+- **La ventana de un colegio suma sus promociones con 5 o más que ingresan** (`promociones`). Con la regla de divulgación vigente entran
   también aquellas donde entraron casi todos: el Colegio Tabancura suma sus cinco promociones de 2021–2025. Queda fuera
   una promoción donde entraron menos de 5, o que tuvo menos de 5 egresados. Si falta alguna, la herramienta lo avisa:
   **di cuántas promociones suma la ventana** y no presentes sus cifras como de las cinco.
@@ -121,7 +121,7 @@ matricularon en la educación superior.
 - **La tasa del saber es la de los jóvenes.** Si das una tasa de ingreso del país o de un territorio, o la comparas
   con una oficial, di que el SIES publica otra más baja (50,4 % para la promoción 2025) porque incluye a los
   egresados de adultos, y **di cuál cifra es del saber y cuál del SIES**. La herramienta trae el aviso; repítelo.
-- **«menos de 5» es de 1 a 4**, no cero. Desde divulgacion@3 («el agregado manda», decidida por Ernesto) toda cifra de
+- **«menos de 5» es de 1 a 4**, no cero. Con la regla de divulgación vigente («el agregado manda») toda cifra de
   5 o más se publica aunque al restarla quede un grupo chico: «ingresan 92 de 95» va con su cifra, y en el reparto
   universidad / técnico-profesional cada parte va con su cifra o como «menos de 5».
 - **Un «menos de 5» no se despeja.** «Ingresan 134, a universidad 131» deja calcular la parte técnico-profesional, y
@@ -164,5 +164,5 @@ matricularon en la educación superior.
 
 ## Cierra con las fuentes
 
-Desde `procedencia` y `procedencia.resultados`: el NEM es del Mineduc, la PAES del DEMRE, y el ingreso y el destino
-de la Matrícula de Educación Superior (SIES), y los prioritarios del tramo alto de Alumnos SEP (Mineduc); con la versión que trae `procedencia.resultados.version`. Nunca de memoria.
+Desde `procedencia.para_el_lector`: cada fuente con su institución, el conjunto de datos, el período y la fecha de los datos, y las reglas en lenguaje llano que apliquen a lo que respondiste. Nunca de memoria. 
+**Cita sólo las fuentes de los bloques que usaste**, con `procedencia.para_el_lector.por_bloque`: una respuesta sobre carreras cita la Matrícula de Educación Superior (SIES) y los Egresados de Enseñanza Media, no la PAES ni el NEM. **Ninguna versión ni identificador con «@»** (`evidencia@4`, `resultados@11`…) en lo que lee el destinatario: eso es `procedencia.auditoria`, para reproducir la cifra, y va sólo en un anexo técnico o si quien pregunta es técnico.

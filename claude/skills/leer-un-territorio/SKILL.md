@@ -47,7 +47,7 @@ dentro de «otros» (`colegios_con_egreso_agrupado`), la suma es un mínimo («a
 
 ## Colegios, cierres y por qué cambia la matrícula
 
-Los tres panoramas traen `colegios_y_cierres` (cierres@1). **Sin años, los panoramas traen los últimos cinco
+Los tres panoramas traen `colegios_y_cierres`. **Sin años, los panoramas traen los últimos cinco
 (2022–2026)**, con su `colegios_y_cierres`, y el primer aviso lo dice: si la pregunta es por la evolución larga, pide
 `desde=2004` y dilo en la respuesta.
 
@@ -136,5 +136,4 @@ entraron a la educación superior y adónde, `resultados_territorio` (skill leer
 
 ## Cierra con las fuentes
 
-Desde `procedencia`: la fuente original, los años y la versión de la evidencia (`agregados` para comuna, región y
-país), con sus consideraciones. Nunca de memoria.
+Desde `procedencia.para_el_lector`: cada fuente con su institución, el conjunto de datos, el período y la fecha de los datos, y las reglas en lenguaje llano que apliquen a lo que respondiste. Nunca de memoria. Di los años de cada cifra. **Ninguna versión ni identificador con «@»** (`evidencia@4`, `resultados@11`…) en lo que lee el destinatario: eso es `procedencia.auditoria`, para reproducir la cifra, y va sólo en un anexo técnico o si quien pregunta es técnico.
