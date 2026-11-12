@@ -1,0 +1,20 @@
+Matrícula Escolar
+Copyright 2026 MindTheContext SpA
+
+Este producto incluye software y textos desarrollados por MindTheContext (https://mindthecontext.ai),
+distribuidos bajo la Licencia Apache, versión 2.0.
+
+«Matrícula Escolar» y «MindTheContext» son nombres de MindTheContext SpA. La licencia no da derecho a
+usarlos para presentar una versión modificada como si fuera la original (sección 6 de la licencia).
+
+Datos:
+- Este plugin no incluye datos. Las cifras las entrega el servicio de Matrícula Escolar
+  (matricula-escolar.mcp.mindthecontext.ai), que requiere iniciar sesión, y se calculan desde los datos
+  abiertos del Ministerio de Educación de Chile (datosabiertos.mineduc.cl): matrícula, asistencia,
+  rendimiento, directorio de establecimientos y resultados de admisión a la educación superior. Los datos
+  son de su fuente. Las cifras publicadas son agregados con divulgación aplicada: ningún conteo menor que
+  5 se entrega.
+
+Software de terceros:
+- skills/graficar-y-reportar/assets/plantilla.html carga D3 (ISC) y Observable Plot (ISC) desde
+  cdn.jsdelivr.net al abrirse en el navegador. Este plugin no los incluye ni los redistribuye.

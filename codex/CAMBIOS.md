@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.26.3 · 2026-11-12
+
+Sin cambios en lo que responde. El paquete queda listo para el directorio de Anthropic: trae su licencia (Apache 2.0), un aviso que dice de dónde vienen los datos, el ícono de MindTheContext y el enlace a la política de privacidad, y su ficha enlaza al repositorio público del plugin.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `guia_de_analisis`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`, `radiografia-de-mi-colegio`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@2`
+
 ## v0.26.2 · 2026-11-11
 
 Sin cambios en lo que responde. El paquete trae una carpeta nueva que se instala igual en Claude y en un espacio de trabajo de ChatGPT, desde una sola entrada del catálogo: antes el espacio de trabajo de ChatGPT rechazaba la versión de Claude porque sus skills no declaraban su nombre. La descripción de leer-los-resultados se acortó al máximo de 1.024 caracteres que fija el estándar de skills, sin quitar temas.
