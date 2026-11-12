@@ -73,7 +73,8 @@ Va siempre, al final del reporte. Se construye desde `procedencia.para_el_lector
 | `quiebres` | Los que tocan los años del reporte: el hueco de 2008 (faltan 31 colegios), la PAES desde la promoción 2022 (la PSU no es comparable), la región actual de cada comuna para toda la serie, la pandemia en 2020–2021 si hay ingreso. |
 | `cobertura` | Sin educación de adultos ni jardines de JUNJI e Integra. |
 | `no_derivable` | Lo que el lector podría creer que el gráfico dice y no dice: por qué cambia o cierra un colegio, la nacionalidad, si los que entran a la educación superior siguen o se titulan, la calidad de un colegio. |
-| `reproducibilidad` | `procedencia.auditoria` (las versiones: evidencia, agregados, resultados, cierres) en un pie plegable (`<details>`) o en un comentario HTML, nunca en el texto visible. |
+| `elaborado` | `procedencia.para_el_lector.elaborado_por`. Se ve al pie. |
+| `reproducibilidad` | `procedencia.auditoria` (las versiones: evidencia, agregados, resultados, cierres). La plantilla la pliega en un `<details>`; nunca va en `elaborado` ni en el texto visible. |
 
 ## Reglas
 

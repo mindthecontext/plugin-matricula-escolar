@@ -206,7 +206,9 @@
 
   // ── fuentes — el bloque «Fuentes y método» del reporte, armado desde `procedencia` y los criterios ─────────
   // f: {fuentes: [{nombre, detalle}], universo, medidas: [{n, def}], divulgacion, quiebres: [..], cobertura,
-  //     no_derivable: [..], versiones, generado}
+  //     no_derivable: [..], elaborado, reproducibilidad, generado}
+  // `elaborado` se ve («Elaborado por …», de para_el_lector.elaborado_por). `reproducibilidad` (las versiones de
+  // procedencia.auditoria) va plegada en un <details>: es para quien quiera reproducir la cifra, no para el lector (MEE-81).
   function fuentes(el, f) {
     const li = (xs) => (xs && xs.length ? `<ul>${xs.map((x) => `<li>${x}</li>`).join("")}</ul>` : "<p>—</p>");
     el.classList.add("fuentes");
@@ -220,7 +222,8 @@
         <dt>Cobertura</dt><dd><p>${f.cobertura || "—"}</p></dd>
         <dt>Lo que estos datos no dicen</dt><dd>${li(f.no_derivable)}</dd>
       </dl>
-      <p class="versiones">${f.versiones || ""}${f.generado ? ` · generado el ${f.generado}` : ""}</p>`;
+      <p class="versiones">${f.elaborado || ""}${f.generado ? ` · generado el ${f.generado}` : ""}</p>
+      ${f.reproducibilidad ? `<details class="versiones"><summary>Para reproducir estas cifras</summary>${f.reproducibilidad}</details>` : ""}`;
   }
 
   window.Laminas = { serie: responsiva(serie), balance: responsiva(balance), barras: responsiva(barras), fuentes, DEP, FMT };
