@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "matricula-escolar": {
+      "type": "http",
+      "url": "https://matricula-escolar.mcp.mindthecontext.ai/mcp"
+    }
+  }
+}
