@@ -13,11 +13,11 @@ y qué no dicen. **El formato es fijo; el contenido lo dictan los datos.**
 
 1. **Trae los datos con las herramientas** (las mismas de las otras skills), en esta misma sesión. Nunca una cifra de
    memoria ni transcrita de otro lado.
-2. **Usa la plantilla y las láminas del saber, sin rediseñarlas.** Están junto a esta skill:
-   - `assets/plantilla.html`: la página. Reemplaza sólo sus cuatro marcas: `__TITULO__`, `__BAJADA__`,
-     `__LAMINAS_JS__` (pega ahí el contenido de `assets/laminas.js`) y `__REPORTE__` (el JSON del reporte).
-   - `assets/laminas.js`: las láminas, ya probadas. Colores, formas, trazos, formato de números y rótulos están
-     resueltos ahí.
+2. **Usa la plantilla y las láminas del saber, sin rediseñarlas.** Pídelas con `plantilla_de_laminas()`, que no usa
+   créditos:
+   - `plantilla_html`: la página. Reemplaza sólo sus cuatro marcas: `__TITULO__`, `__BAJADA__`, `__LAMINAS_JS__`
+     (pega ahí `laminas_js` tal cual) y `__REPORTE__` (el JSON del reporte).
+   - `laminas_js`: las láminas, ya probadas. Colores, formas, trazos, formato de números y rótulos están resueltos ahí.
 3. **Arma el JSON del reporte** (abajo) y entrega la página como artifact o archivo HTML. Las láminas se dibujan con
    JavaScript: un visor que muestra el archivo sin ejecutar scripts lo verá en blanco. Ábrelo en un navegador o publícalo
    como artifact.

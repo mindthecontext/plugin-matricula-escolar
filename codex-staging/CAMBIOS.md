@@ -4,6 +4,14 @@
 
 Qué cambia para quien usa este saber, versión por versión. Lo que corre de verdad el servicio lo dice su herramienta `ver_cambios`; esto es la copia del paquete.
 
+## v0.28.0 · 2026-11-12
+
+Los gráficos y reportes se arman igual, pero su plantilla ya no viaja dentro del plugin: la entrega el servicio con una herramienta nueva, plantilla_de_laminas, que no usa créditos. Así el plugin queda sólo con textos e imágenes, como exige el directorio de Anthropic. Los datos y las respuestas no cambian.
+
+- Herramientas: `asistencia`, `buscar_colegio`, `buscar_comuna`, `captacion_comuna`, `colegios_comuna`, `colegios_del_sostenedor`, `corredores_colegio`, `despues_de_octavo`, `ficha_colegio`, `flujos_colegio`, `guia_de_analisis`, `listar_cobertura`, `matriz_comuna`, `obtener_criterios`, `panorama_comuna`, `panorama_pais`, `panorama_region`, `plantilla_de_laminas`, `preguntas_abiertas`, `proyeccion_matricula`, `resultados_colegio`, `resultados_territorio`, `ver_cambios` · aparece `plantilla_de_laminas`
+- Skills: `empezar-aqui`, `graficar-y-reportar`, `leer-los-resultados`, `leer-un-colegio`, `leer-un-mercado`, `leer-un-territorio`, `leer-una-red`, `radiografia-de-mi-colegio`
+- Datos: `evidencia@4+directorio@3+agregados@3+resultados@11+cierres@2+proyecciones@2+asistencia@3+trayectoria8@2`
+
 ## v0.27.1 · 2026-11-12
 
 Las páginas de gráficos ya no tienen un espacio visible para las versiones internas: el pie dice quién las elaboró, y lo que sirve para reproducir las cifras queda plegado bajo «Para reproducir estas cifras». Los datos y las respuestas no cambian.
